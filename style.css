@@ -1,4 +1,97 @@
 body {
-    /* font-family: 'Baloo 2', cursive; */
     /* font-family: Helvetica, sans-serif; */
+    font-family: 'Baloo 2', cursive;
+    font-size: 45px;
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    margin: 0 80px 120px;
+    max-width: 1680px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
+/* @media only screen and (min-width: 1680px) {
+    body {
+        margin: 0 auto 120px;
+    }
+} */
+
+h1 {
+    line-height: 80px;
+    margin: 0;
+}
+
+.landingContainer,
+.team,
+.creativeDesigners,
+.creative,
+.developers {
+    display: flex;
+}
+
+.landingContainer {
+    justify-content: space-between;
+}
+
+.team {
+    align-items: flex-end;
+}
+
+.leftContainer {
+
+}
+
+.rightContainer {
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shape {
+    width: 200px;
+    height: 200px;
+    max-width: 600px;
+    background-color: white;
+    /* border: 1px solid white; */
+}
+
+.shape1 {
+    background: #F2CD5C;
+    border-radius: 100px 0px 0px 100px;
+}
+.shape2 {
+    background: #BAA8E1;
+    border-radius: 100px;
+}
+.shape3 {
+    background: #F8D8B4;
+    border-radius: 100px 0px;
+}
+.shape4 {
+    background: #F44D00;
+    border-radius: 100px 0px;
+}
+.shape5 {
+    background: #4C5866;
+    border-radius: 0px 0px 100px 100px;
+}
+.shape6 {
+    background: #F2CD5C;
+    border-radius: 100px 0px;
+}
+.shape7 {
+    background: #4C5866;
+    border-radius: 0px 100px;
+}
+.shape8 {
+    background: #BAA8E1;
+    border-radius: 100px 0px 0px 0px;
+}
+.shape9 {
+    background: #F44D00;
+    border-radius: 100px 100px 0px 0px;
+}
+
+
+
