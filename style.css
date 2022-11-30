@@ -1,59 +1,122 @@
 body {
-    /* font-family: Helvetica, sans-serif; */
     font-family: 'Baloo 2', cursive;
-    font-size: 45px;
     background-color: #1F1F1F;
     color: #FFFFFF;
-    margin: 0 80px 120px;
     max-width: 1680px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    margin: 0 80px 120px;
 }
 
-/* @media only screen and (min-width: 1680px) {
-    body {
-        margin: 0 auto 120px;
-    }
-} */
+/* NAVBAR*/
+#navbar {
+    font-size: 20px;
+    margin: 45px 0 40px;
+}
 
+.logo-main span {
+    margin-right: 5px;
+}
+
+.logo-main a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/* END OF NAVBAR */
+
+/* LANDING PAGE */
 h1 {
-    line-height: 80px;
     margin: 0;
+    font-size: 54px;
+    line-height: 60px;
 }
 
 .landingContainer,
 .team,
 .creativeDesigners,
-.creative,
+.creativeDesigners div,
 .developers {
     display: flex;
 }
 
+.leftContainer {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .landingContainer {
     justify-content: space-between;
+    gap: 30px;
 }
 
 .team {
     align-items: flex-end;
+    justify-content: space-between;
 }
 
-.leftContainer {
+.team img {
+    margin-bottom: 30px;
+}
 
+.creativeDesigners {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.creativeDesigners div {
+    background: #F44D00;
+    border-radius: 13px;
+    padding: 5px 10px;
+    align-items: center;
+    margin: 5px 25px 5px 0;
+    gap: 5px;
+}
+
+.creativeDesigners img {
+    height: 32px;
+}
+
+.developers img {
+    height: 45px;
+    margin-left: 40px;
+    position: relative;
+    bottom: 7px;
+}
+
+.leftContainer a {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: #1F1F1F;
+    width: max-content;
+    margin-top: 50px;
+    padding: 10px 17px;
+    background: #F44D00;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.7s;
+}
+
+.leftContainer a:hover {
+    background-color: #FFFFFF;
+}
+
+.backgroundButton {
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    padding: 0;
+    position: relative;
+    bottom: 100px;
+    right: 10px;
+    z-index: -1;
 }
 
 .rightContainer {
     max-width: 600px;
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
-}
-
-.shape {
-    width: 200px;
-    height: 200px;
-    max-width: 600px;
-    background-color: white;
-    /* border: 1px solid white; */
 }
 
 .shape1 {
@@ -93,5 +156,85 @@ h1 {
     border-radius: 100px 100px 0px 0px;
 }
 
+.shape {
+    width: 33.333%;
+	height: 200px;
+	position: relative;
+	cursor: pointer;
+}
+.frontFace {
+    position: relative;
+	backface-visibility: hidden;
+	transition: all 0.3s ease-in-out;
+	transform: perspective(500px) rotateY(0deg);
+    height: inherit;
+}
+.backFace {
+    position: absolute;
+	left: 0;
+	top: 0;
+	backface-visibility: hidden;
+	transition: all 0.3s ease-in-out;
+	transform: perspective(500px) rotateY(180deg);
+}
+.backFace img {
+    width: 100%;
+    height: 200px;
+}
+.shape:hover .frontFace {
+    transform: perspective(500px) rotateY(-180deg);
+}
+.shape:hover .backFace {
+    transform: perspective(500px) rotateY(0deg);
+}
+/* END OF LANDING PAGE */
 
+/* RESPONSIVENESS */
+/* BIGGER SCREENS */
+@media screen and (min-width: 1840px) {
+    body {
+        margin: 0 auto 120px;
+    }
+}
 
+@media screen and (min-width: 1500px) {
+    h1 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+}
+
+/* SMALLER SCREENS*/
+@media screen and (max-width: 1340px) {
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .team img {
+        margin-left: 10px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .landingContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .leftContainer {
+        margin-top: 0;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .team {
+        justify-content: initial;
+        gap: 20px;
+    }
+    .team img {
+        height: 80px;
+        width: 200px;
+    }
+    .rightContainer {
+        max-width: 100%;
+    }
+}
