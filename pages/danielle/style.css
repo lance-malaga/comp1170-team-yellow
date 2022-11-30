@@ -5,18 +5,30 @@ body{
     
 }
 
+@media screen and (min-width: 1960px){
+    body {
+        margin: 45px auto 0px;
+    }
+}
+
 #navbar{
     font-family: Helvetica, sans-serif;
     font-weight: 700;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-.logo-main{
-    padding-right: 357px;
+    padding-bottom: 18px;
 }
 
+.team-name{
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.smellow{
+    display: flex;
+    align-items: center;
+}
 a{
     color: white;
     text-decoration: none;
@@ -32,5 +44,96 @@ a{
 .navbar-line{
     height: 1px;
     background-color: white;
-    max-width: 1600px;
+}
+
+@media screen and (max-width: 1023px){
+    .nav-categories{
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    body{
+        margin: 45px 20px 0px;
+
+    }
+}
+.container{
+    margin-left: 25px;
+}
+.daniella-image{
+    position: absolute;
+    width: 375px;
+    height: 435px;
+    left: 170px;
+    top: 194px;
+}
+.intro-left{
+    position: absolute;
+    width: 497px;
+    height: 300px;
+    left: 585px;
+    top: 194px;
+}
+
+h2 {
+    -webkit-text-stroke-width:2px;
+    color: #BAA8E1;
+    /* -webkit-text-stroke-color: #BAA8E1; */
+    /* -webkit-text-fill-color: transparent; */
+    font-family: 'Baloo 2';
+    font-size: 55px;
+} 
+
+h1{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    width: 530px;
+    line-height: 1px;
+    color: white;
+}
+
+.little-text{
+    display: flex;
+    justify-content: space-between;
+    width: 132px;
+    color: #C6EC4C;
+    font-family: Helvetica, sans-serif;
+}
+
+.description{
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+.exclamation{ 
+    position: absolute;
+    font-family: 'Baloo 2';
+    font-size: 180px;
+    top: 20px;
+    left: 440px;
+    color: #F44D00;
+}
+
+.nav-box{
+    font-family: Helvetica, sans-serif;
+    position: absolute;
+    width: 392px;
+    height: 75px;
+    left: 582px;
+    top: 617px;
+    /* color: #1F1F1F; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* border-color: #ffffff; */
+    border: #1F1F1F 2px solid;
+    background-color: white;
+    box-shadow: 15px 15px #baa8e1;
+}
+
+.black-text{
+    color: #1F1F1F;
 }
