@@ -1,0 +1,36 @@
+body{
+    background-color: #1F1F1F;
+    max-width: 1680px;
+    margin: 45px 80px 0px;
+    
+}
+
+#navbar{
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-main{
+    padding-right: 357px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.red{
+    color: #F44D00;
+}
+.nav-categories{
+    display: flex;
+    gap: 150px;
+}
+
+.navbar-line{
+    height: 1px;
+    background-color: white;
+    max-width: 1600px;
+}
