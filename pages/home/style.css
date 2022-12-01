@@ -1,0 +1,42 @@
+body{
+    max-width: 1680px;
+    background-color: #f1f1f1;
+    margin: 45px 80px 180px;
+}
+
+.recent-works{
+    display: flex;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 545px;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    
+}
+.firstText{
+    display: flex;
+    font-size: 30px;
+    justify-content: end;
+    margin-bottom: -80px;
+
+}
+
+.secondText{
+    display: flex;
+    font-size: 30px;
+    justify-content: end;
+    color: #ff8c00;
+}
+
+.imagetwos{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}

@@ -1,26 +1,28 @@
-body{
+body {
     max-width: 1680px;
     background-color: #1f1f1f;
     margin: 45px 80px 180px;
 }
 
-.about-me{
+.about-me {
     display: flex;
     gap: 20px;
 }
 
 
-.description{
+.description {
     display: flex;
     align-items: baseline;
     flex-direction: column;
 }
-.firstText{
-display: flex;
-align-items: center;
-justify-content: center;
+
+.firstText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-.text{
+
+.text {
     font-size: 40px;
 }
