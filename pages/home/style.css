@@ -119,12 +119,13 @@ body > * {
 }
 
 .teamSection{
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .subtitle h1{
     color: #FFFFFF;
     font-size: 50px;
     font-weight: 300;
+    margin: 0;
 }
 .subtitle span{
     font-weight: 700;
@@ -132,13 +133,15 @@ body > * {
 #orange{
     color: #F44D00;
 }
-.teamImages{
-    position: absolute;
-    width: 1120px;
-    height: 763.07px;
-    left: 80px;
-    top: 2539px;
 
+.aboveImages{
+   display: flex;
+   gap: 65px;
+   margin-top: 50px;
+   margin-bottom: 70px;
 }
-
+.bellowImages{
+    display: flex;
+    justify-content: space-between;
+}
 
