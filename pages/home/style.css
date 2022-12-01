@@ -2,6 +2,7 @@ body{
     background-color: #1F1F1F;
     max-width: 1680px;
     margin: 45px 0 180px;
+    font-family: 'Roboto', sans-serif;
 }
 body > * {
     margin: 0 80px;
@@ -9,7 +10,6 @@ body > * {
 
 /* NAVBAR */
 #navbar{
-    font-family: Helvetica, sans-serif;
     font-weight: 700;
     font-size: 14px;
     display: flex;
@@ -56,6 +56,9 @@ body > * {
     line-height: 80px;
     margin: 0;
 }
+.topSection span {
+    color: #F44D00;
+}
 .secondLine,
 .thirdLine div,
 .topDesc {
@@ -72,7 +75,6 @@ body > * {
     justify-content: space-between;
 }
 .topDesc p {
-    font-family: 'Helvetica Neue';
     font-weight: 300;
     font-size: 40px;
     color: #FFFFFF;
