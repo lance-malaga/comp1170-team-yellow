@@ -1,5 +1,5 @@
 body{
-    background-color: #1F1F1F;
+    background-color: #1f1f1f;
     max-width: 1680px;
     margin: 45px 0 180px;
     font-family: 'Roboto', sans-serif;
@@ -116,5 +116,32 @@ body > * {
         margin: 45px 20px 0px;
 
     }
+}
+
+.teamSection{
+    font-family: 'Roboto', sans-serif;
+}
+.subtitle h1{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+}
+.subtitle span{
+    font-weight: 700;
+}
+#orange{
+    color: #F44D00;
+}
+
+.aboveImages{
+   display: flex;
+   gap: 65px;
+   margin-top: 50px;
+   margin-bottom: 70px;
+}
+.bellowImages{
+    display: flex;
+    justify-content: space-between;
 }
 
