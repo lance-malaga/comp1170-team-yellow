@@ -13,4 +13,14 @@ body{
 .description{
     display: flex;
     align-items: baseline;
+    flex-direction: column;
+}
+.firstText{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.text{
+    font-size: 40px;
 }
