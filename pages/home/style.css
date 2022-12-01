@@ -1,5 +1,5 @@
 body{
-    background-color: #1F1F1F;
+    background-color: #1f1f1f;
     max-width: 1680px;
     margin: 45px 0 180px;
 }
@@ -116,4 +116,28 @@ body > * {
 
     }
 }
+
+.teamSection{
+    font-family: Helvetica, sans-serif;
+}
+.subtitle h1{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 300;
+}
+.subtitle span{
+    font-weight: 700;
+}
+#orange{
+    color: #F44D00;
+}
+.teamImages{
+    position: absolute;
+    width: 1120px;
+    height: 763.07px;
+    left: 80px;
+    top: 2539px;
+
+}
+
 
