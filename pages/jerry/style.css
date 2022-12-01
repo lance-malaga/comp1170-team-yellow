@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    max-width: 1680px;
+    background-color: #1f1f1f;
+}
+
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 700px;
+    margin: 0 50px;
+    gap: 20px;
+}
+
+.profile{
+    display: flex;
+    align-items: flex-end;
+}
+
+.description{
+    display: flex;
+    align-items: flex-start;
+}
