@@ -1,8 +1,10 @@
 body{
     background-color: #1F1F1F;
     max-width: 1680px;
-    margin: 45px 80px 180px;
-    
+    margin: 45px 0 180px;
+}
+body > * {
+    margin: 0 80px;
 }
 
 /* NAVBAR */
@@ -14,11 +16,11 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 11px;
+    /* margin: 0 80px; */
 }
 .logo-main span {
     margin-right: 5px;
 }
-
 .logo-main a {
     color: #FFFFFF;
     font-size: 20px;
@@ -39,9 +41,59 @@ body{
 .navbar-line{
     height: 1px;
     background-color: white;
-    width: 100%;
 }
 /* END OF NAVBAR */
+
+/* TOP SECTION */
+.topSection {
+    margin: 100px auto 80px;
+    width: fit-content;
+}
+.topSection h1 {
+    color: #FFFFFF;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 80px;
+    margin: 0;
+}
+.secondLine,
+.thirdLine div,
+.topDesc {
+    display: flex;
+}
+.circleGroup {
+    position: relative;
+    right: 20px;
+}
+.thirdLine img {
+    margin: 0 30px;
+}
+.topDesc {
+    justify-content: space-between;
+}
+.topDesc p {
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+    font-size: 40px;
+    color: #FFFFFF;
+    width: 45%;
+}
+.topOrangeSection {
+    background-color: #F44D00;
+    padding: 100px 0;
+    margin: 120px 0;
+}
+.topOrangeSection div {
+    margin: 0 80px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.topOrangeSection img {
+    height: 200px;
+}
+/* END OF TOP SECTION */
 
 
 /* RESPONSIVENESS */
