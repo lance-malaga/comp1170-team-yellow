@@ -99,14 +99,14 @@ body > * {
 /* Recent Works */
 .recent-works{
     display: flex;
-    gap: 500px;
+    gap: 190px;
 }
 
 .description{
     display: flex;
     flex-direction: column;
     height: 600px;
-    width: 545px;
+    width: 640px;
 }
 
 .texts{
@@ -132,12 +132,12 @@ body > * {
 .imagetwos{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    justify-content: space-between;
 }
 .righttexts{
     display: flex;
     flex-direction: column;
-    width: 800px;
+    width: 690px;
 
 }
 .threeimage{
@@ -151,7 +151,20 @@ body > * {
 }
 
 .lastdescription{
-    
+    display: flex;
+    height: 320px;
+
+}
+.fourimages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.circle3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* end of recent works*/
 /* RESPONSIVENESS */
