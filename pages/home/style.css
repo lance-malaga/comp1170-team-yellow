@@ -99,14 +99,14 @@ body > * {
 /* Recent Works */
 .recent-works{
     display: flex;
-    gap: 190px;
+    gap: 160px;
 }
 
 .description{
     display: flex;
     flex-direction: column;
     height: 600px;
-    width: 640px;
+    width: 710px;
 }
 
 .texts{
@@ -133,11 +133,12 @@ body > * {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: ;
 }
 .righttexts{
     display: flex;
     flex-direction: column;
-    width: 690px;
+    width: 720px;
 
 }
 .threeimage{
