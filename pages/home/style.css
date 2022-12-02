@@ -99,12 +99,13 @@ body > * {
 /* Recent Works */
 .recent-works{
     display: flex;
+    gap: 500px;
 }
 
 .description{
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 600px;
     width: 545px;
 }
 
@@ -131,7 +132,26 @@ body > * {
 .imagetwos{
     display: flex;
     flex-direction: row;
-    gap: 48px;
+    gap: 50px;
+}
+.righttexts{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+}
+.threeimage{
+    display: flex;
+    justify-content: center;
+}
+.circles{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.lastdescription{
+    
 }
 /* end of recent works*/
 /* RESPONSIVENESS */
