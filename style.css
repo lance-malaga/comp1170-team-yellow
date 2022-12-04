@@ -193,7 +193,7 @@ h1 {
 
 /* RESPONSIVENESS */
 /* BIGGER SCREENS */
-@media screen and (min-width: 1840px) {
+@media screen and (min-width: 1760px) {
     body {
         margin: 0 auto 120px;
     }

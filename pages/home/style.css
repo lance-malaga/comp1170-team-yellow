@@ -128,7 +128,7 @@ body > * {
 
 /* RESPONSIVENESS */
 /* BIGGER SCREENS */
-@media screen and (min-width: 1960px){
+@media screen and (min-width: 1760px){
     body {
         margin: 45px auto 180px;
     }
