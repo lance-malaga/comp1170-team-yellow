@@ -11,6 +11,10 @@ body{
     }
 }
 
+.main-container{
+    max-width: 60%;
+    margin: 0 auto;
+}
 #navbar{
     font-family: Helvetica, sans-serif;
     font-weight: 700;
@@ -62,18 +66,15 @@ a{
     margin-left: 25px;
 }
 .daniella-image{
-    position: absolute;
-    width: 375px;
-    height: 435px;
-    left: 170px;
-    top: 194px;
+    height: 530px
 }
-.intro-left{
-    position: absolute;
-    width: 497px;
-    height: 300px;
-    left: 585px;
-    top: 194px;
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 107px;
+}
+.intro-right{
+
 }
 
 h2 {
@@ -106,29 +107,26 @@ h1{
 .description{
     color: white;
     font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
 }
 .exclamation{ 
-    position: absolute;
     font-family: 'Baloo 2';
     font-size: 180px;
-    top: 20px;
-    left: 440px;
     color: #F44D00;
+    margin: 0;
+    line-height: 130px;
+    margin-left: 47px;
 }
 
 .nav-box{
     font-family: Helvetica, sans-serif;
-    position: absolute;
-    width: 392px;
-    height: 75px;
-    left: 582px;
-    top: 617px;
-    /* color: #1F1F1F; */
+    padding: 25px;
+    margin-top: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    /* border-color: #ffffff; */
     border: #1F1F1F 2px solid;
     background-color: white;
     box-shadow: 15px 15px #baa8e1;
@@ -136,4 +134,89 @@ h1{
 
 .black-text{
     color: #1F1F1F;
+    font-weight: 700;
+}
+
+.about-me{
+    display: flex;
+    align-items: center;
+    margin-top: 97px;
+}
+
+.container-box2{
+    font-family: Helvetica, sans-serif;
+    border: #1F1F1F 2px solid;
+    width: 420px;
+    background-color: white;
+    box-shadow: 15px 15px #baa8e1;
+}
+
+.purple-text{
+    color: #baa8e1;
+    margin-left: 26px;
+}
+
+.edu-input{
+    margin-left: 73px;
+}
+
+.school-headings{
+    margin-left: 46px;
+}
+
+.container-box3{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 155px;
+    width: 400px;
+}
+
+.like{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dislike{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-like, .list-dislike{
+    margin-top: 36px;
+}
+
+.container-box4{
+    padding-top: 75px;
+    display: flex;
+}
+
+.software{
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+#pixel-character{
+    height: 540px;
+    margin-left: 100px;
+}
+
+.titles{
+    border-bottom:  3px solid #BAA8E1;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 10px;
+    width: fit-content;
+}
+
+.hobbies{
+    font-family: Helvetica, sans-serif;
+    color: white;
 }
