@@ -2,7 +2,7 @@ body{
     background-color: #1F1F1F;
     max-width: 1680px;
     margin: 45px 80px 0px;
-    
+    align-content: center;
 }
 
 @media screen and (min-width: 1960px){
@@ -63,9 +63,9 @@ a{
 }
 .daniella-image{
     position: absolute;
-    width: 375px;
-    height: 435px;
-    left: 170px;
+    width: 440px;
+    height: 519px;
+    left: 140px;
     top: 194px;
 }
 .intro-left{
@@ -106,6 +106,7 @@ h1{
 .description{
     color: white;
     font-family: Helvetica, sans-serif;
+    font-size: 16px;
 }
 .exclamation{ 
     position: absolute;
@@ -116,7 +117,7 @@ h1{
     color: #F44D00;
 }
 
-.nav-box{
+.container-box1{
     font-family: Helvetica, sans-serif;
     position: absolute;
     width: 392px;
@@ -136,4 +137,81 @@ h1{
 
 .black-text{
     color: #1F1F1F;
+}
+
+.container-box2{
+    font-family: Helvetica, sans-serif;
+    position: absolute;  
+    width: 440px;
+    height: 220px;
+    left: 170px;
+    top: 800px;
+    border: #1F1F1F 2px solid;
+    background-color: white;
+    box-shadow: 15px 15px #baa8e1;
+}
+
+.purple-text{
+    color: #baa8e1;
+    margin-left: 26px;
+}
+
+.edu-input{
+    margin-left: 73px;
+}
+
+.school-headings{
+    margin-left: 46px;
+}
+
+.container-box3{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    width: 255px;
+    height: 125px;
+    left: 711px;
+    top: 822.14px;
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 325px; */
+    width: 400px;
+}
+
+.like{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dislike{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-like, .list-dislike{
+    margin-top: 36px;
+}
+
+.container-box4{
+    position: absolute;
+    width: 450px;
+    height: 540px;
+    left: 170px;
+    top: 1020px;
+    padding-top: 75px;
+    display: flex;
+}
+
+.software{
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+#pixel-character{
+    height: 540px;
+    margin-left: 60px;
 }
