@@ -1,0 +1,373 @@
+body{
+    background-color: #1F1F1F;
+    max-width: 1680px;
+    margin: 45px 80px 0px;
+    
+}
+@media screen and (min-width: 1550px) {
+    .body{
+        margin: 45px auto 0px;
+    }
+}
+#navbar{
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 18px;
+}
+
+.team-name{
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.smellow{
+    display: flex;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.red{
+    color: #F44D00;
+}
+.nav-categories{
+    display: flex;
+    gap: 150px;
+}
+
+.navbar-line{
+    height: 1px;
+    background-color: white;
+}
+
+@media screen and (max-width: 1023px){
+    .nav-categories{
+        gap: 50px;
+    }
+}
+
+
+
+    
+
+.container{
+       width: 1086px;
+        height: 482px;
+        background: rgb(0, 0, 0);
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        margin-left: 8%;
+        margin-right: 10%;
+    
+      
+       }
+       @media screen and (max-width: 1023px){
+        .container{
+            gap: 50px;
+        }
+       }
+     
+.me{
+    margin-left: 550px;
+    height: 750px;
+  
+}
+@media  screen and (max-width: 1023px) {
+    .me{
+        gap: 50px;
+    }
+}
+
+
+.circle{
+    position: absolute;
+    top: 80px;
+    left: 85%;
+    }
+
+.title-text{
+    color: white;
+    font-family: baloo 2;
+    margin-left: 50px;
+    font-size: 55px;
+    position: absolute;
+}
+.title-text2{
+    color: white;
+    font-family: baloo 2;
+    margin-left: 100px;
+    margin-top: 150px;
+    font-size: 55px;
+    position: absolute;
+}
+.vector{
+position: absolute;
+width: 200px;
+height: 178px;
+left: 90px;
+top: 300px;
+}
+.about{
+color: white;
+position: absolute;
+left: 150px;
+margin-top: 400px;
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+margin-right: 5%;
+}
+.picture-headings{
+    color: white;
+    font-family: baloo2;
+    margin-left: 5%;
+    position: relative;
+    font-size: 24px;
+}
+.second-line{
+    color: rgb(255, 255, 255);
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+
+.about-me{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+
+}
+.friends{
+border-radius: 50%;
+width: 270px;
+height: 250px;
+margin-left: 10%;
+margin-top: 5%;
+
+
+
+}
+
+.friends2{
+    border-radius: 50%;
+    width: 270px;
+    height: 250px;
+    margin-left: 35%;
+    margin-top: 5%;
+    
+    }
+    .grandma{
+    border-radius: 50%;
+    width: 270px;
+    height: 250px;
+    margin-left: 40%;
+  
+    
+
+    }
+
+
+.design{
+    font-family: baloo2;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin-left: 5%;
+    position: relative;
+}
+.second-line{
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.designwork{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 5%;
+    padding-top: 5%;
+    
+    
+}
+
+.work1{
+width: 356px;
+height: 502px;
+
+
+}
+.work2{
+width: 356px;
+height: 502px;
+padding-left: 35%;
+
+}
+.work3{
+width: 356px;
+height: 502px;
+padding-top: 10%;
+}
+.work4{
+width: 356px;
+height: 502px;
+padding-left: 35%;
+padding-top: 10%;
+}
+
+.website{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.mockup{
+    height: 496px;
+    width: 942px;
+    margin-left: 15%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.star1{
+    height: 154px;
+    width: 154px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25%;
+}
+.star2{
+    height: 154px;
+    width: 154px;
+    display: flex;
+    flex-direction: column;
+
+}
+.hobbies{
+    font-family: baloo2;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin-left: 5%;
+    position: relative;
+
+}
+.third-line{
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.footer-line{
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+
+
+
+.footer{
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 1280px;
+    height: 211px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+.footerone{
+    color: white;
+    font-family: helvetica Neue;
+    font-size: 16px;
+    flex-direction: column;
+    padding-top: 1%;
+    
+    
+   
+}
+.link1{
+    color:#f44d00;
+
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+   
+}
+
+
+
+.information{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    justify-content: center;
+    padding-bottom: 2%;
+    }
+  
+  
+  
+  .location{
+      font-family: helvetica Neue; 
+      color: white;
+      font-size:24px;
+      flex-direction: column;
+      padding-left: 5%;
+      display: flex;
+      
+  
+  
+      }
+  
+  .address{
+      font-family: helvetica Neue;
+      color: white;
+      font-size: 16px;
+      padding-left: 5%;
+      font-weight: 400;
+      line-height: 1px;
+      display: flex;
+  
+      
+  }
+
+  .information-2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+  
+  }
+  .contact{
+      font-family: helvetica Neue; 
+      color: white;
+      font-size:24px;
+      flex-direction: column;
+  
+  
+  }
+  .email{
+      font-family: helvetica Neue;
+      color: #F44D00;
+      font-size: 16px;
+      display: flex;
+  }
+  .number{
+      font-family: helvetica Neue;
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      display: flex;
+  }
+  
