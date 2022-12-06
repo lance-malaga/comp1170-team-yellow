@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #1F1F1F;
     max-width: 1680px;
@@ -206,8 +209,8 @@ h1{
     margin-left: 100px;
 }
 
-.titles{
-    border-bottom:  3px solid #BAA8E1;
+.titles-purple { 
+    border-bottom:  8px solid #BAA8E1;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -217,6 +220,47 @@ h1{
 }
 
 .hobbies{
+    display: flex;
     font-family: Helvetica, sans-serif;
     color: white;
+    font-weight: 700;
+    gap: 85px;
+    margin-top: 50px;
+}
+.hobby{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: space-between;
+}
+.pixel-gifs{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.titles-orange{
+    border-bottom:  8px solid #F44D00;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.portfolio-container{
+    display: flex;
+}
+.container-box5{
+    display: flex;
+    flex-direction: column;
+}
+.Blender{
+    width: 498px;
+    height: 264px;
+    border-radius: 25px;
 }
