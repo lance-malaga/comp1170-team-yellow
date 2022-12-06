@@ -1,5 +1,5 @@
-body {
-    background-color: #1F1F1F;
+body{
+    background-color: #1f1f1f;
     max-width: 1680px;
     margin: 45px 0 180px;
     font-family: 'Roboto', sans-serif;
@@ -115,8 +115,8 @@ body>* {
 
 /* END OF TOP SECTION */
 
-/* Recent Works */
 
+/* Recent Works */
 .WholeBody{
     display: flex;
     max-width: 1680px;
@@ -221,9 +221,37 @@ body>* {
 }
 
 /* end of recent works*/
+/* TEAM SECTION */
+.teamSection{
+    font-family: 'Roboto', sans-serif;
+}
+.subtitle h1{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+}
+.subtitle span{
+    font-weight: 700;
+}
+#orange{
+    color: #F44D00;
+}
+.aboveImages{
+   display: flex;
+   gap: 65px;
+   margin-top: 50px;
+   margin-bottom: 70px;
+}
+.bellowImages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* END OF TEAM SECTION */
 /* RESPONSIVENESS */
 /* BIGGER SCREENS */
-@media screen and (min-width: 1960px) {
+@media screen and (min-width: 1760px){
     body {
         margin: 45px auto 180px;
     }
