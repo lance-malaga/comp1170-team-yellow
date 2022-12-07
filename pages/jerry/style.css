@@ -6,7 +6,7 @@ body {
 
 .about-me {
     display: flex;
-    gap: 90px;
+    gap: 30px;
 }
 
 
@@ -22,6 +22,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 100px;
+    color: #495867;
 
 }
 
@@ -31,7 +32,7 @@ body {
 }
 
 .text p {
-    color: #f1f1f1;
+    color: #f8f4f9;
 }
 
 .personal-projects {
@@ -47,12 +48,124 @@ body {
 }
 
 hr {
-    width: 500px;
+    width: 400px;
     background: #f44D00;
     height: 10px;
     border: none;
 }
-.title{
+
+.title {
     font-size: 75px;
-    color: #f1f1f1;
+    color: #BEA7E5;
+}
+
+.personal {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.twoImages {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.education {
+    display: flex;
+    margin-top: 100px;
+}
+
+.university {
+    display: flex;
+    max-width: 1680px;
+    width: 100%;
+    align-items: center;
+}
+
+.school {
+    font-size: 75px;
+    color: #BEA7E5;
+}
+
+.education hr {
+    width: 400px;
+    background: #f44D00;
+    height: 4px;
+    border: none;
+    margin-left: 100px;
+}
+
+.College {
+    margin-top: 100px;
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.College p {
+    color: #f8f4f9;
+}
+
+.Simon {
+    margin-top: 50px;
+}
+
+.myday {
+    display: flex;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hobbies {
+    display: flex;
+    margin-top: 100px;
+}
+
+.hobbies hr {
+    width: 1000px;
+    background: #f44D00;
+    height: 4px;
+    border: none;
+    margin-left: 100px;
+}
+
+.stuff {
+    font-size: 75px;
+    color: #BEA7E5;
+}
+
+.bies {
+    display: flex;
+    max-width: 1680px;
+    width: 100%;
+    align-items: center;
+}
+
+.video {
+    font-size: 50px;
+    color: #495867;
+}
+
+.Videographyimages {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.Photo {
+    font-size: 50px;
+    color: #495867;
 }
