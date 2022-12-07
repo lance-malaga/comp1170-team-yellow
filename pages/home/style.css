@@ -115,8 +115,7 @@ body>* {
 
 /* END OF TOP SECTION */
 
-
-/* Recent Works */
+/* RECENT WORKS */
 .WholeBody{
     display: flex;
     max-width: 1680px;
@@ -219,36 +218,75 @@ body>* {
     flex-direction: row;
 
 }
+/* END OF RECENT WORKS */
 
-/* end of recent works*/
 /* TEAM SECTION */
-.teamSection{
+.teamSection {
     font-family: 'Roboto', sans-serif;
 }
-.subtitle h1{
+.subtitle h1 {
     color: #FFFFFF;
     font-size: 50px;
     font-weight: 300;
     margin: 0;
 }
-.subtitle span{
+.subtitle span {
     font-weight: 700;
 }
-#orange{
+#orange {
     color: #F44D00;
 }
-.aboveImages{
+.aboveImages {
    display: flex;
    gap: 65px;
    margin-top: 50px;
    margin-bottom: 70px;
 }
-.bellowImages{
+.bellowImages {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 /* END OF TEAM SECTION */
+
+/* FOOTER */
+.footerline {
+    margin-top: 170px;
+    margin-bottom: 35px;
+}
+.footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.footerLeft span {
+    color:#f44d00;
+}
+.footerLeft div {
+    display: flex;
+    gap: 20px;
+}
+.footerLeft img {
+    height: 20px;
+}
+.footerRight {
+    display: flex;
+    gap: 60px;
+}
+.footerRight h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+.footerRight p {
+    margin: 0;
+    line-height: 22px;
+}
+.footerRight .email{
+    color: #F44D00;
+}
+/* END OF FOOTER */
+
+
 /* RESPONSIVENESS */
 /* BIGGER SCREENS */
 @media screen and (min-width: 1760px){
