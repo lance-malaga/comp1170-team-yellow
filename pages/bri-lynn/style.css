@@ -52,30 +52,30 @@ a{
 
 
 
-    
+
 
 .container{
-       width: 1086px;
-        height: 482px;
-        background: rgb(0, 0, 0);
-        top: 0px;
-        left: 0px;
-        overflow: hidden;
-        margin-left: 8%;
-        margin-right: 10%;
+    width: 1086px;
+    height: 482px;
+    background: rgb(0, 0, 0);
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    margin-left: 8%;
+    margin-right: 10%;
     
-      
-       }
-       @media screen and (max-width: 1023px){
-        .container{
-            gap: 50px;
-        }
-       }
-     
+    
+}
+@media screen and (max-width: 1023px){
+    .container{
+        gap: 50px;
+    }
+}
+
 .me{
     margin-left: 550px;
     height: 750px;
-  
+    
 }
 @media  screen and (max-width: 1023px) {
     .me{
@@ -88,7 +88,7 @@ a{
     position: absolute;
     top: 80px;
     left: 85%;
-    }
+}
 
 .title-text{
     color: white;
@@ -106,22 +106,22 @@ a{
     position: absolute;
 }
 .vector{
-position: absolute;
-width: 200px;
-height: 178px;
-left: 90px;
-top: 300px;
+    position: absolute;
+    width: 200px;
+    height: 178px;
+    left: 90px;
+    top: 300px;
 }
 .about{
-color: white;
-position: absolute;
-left: 150px;
-margin-top: 400px;
-font-family: 'Helvetica Neue';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-margin-right: 5%;
+    color: white;
+    position: absolute;
+    left: 150px;
+    margin-top: 400px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 5%;
 }
 .picture-headings{
     color: white;
@@ -134,26 +134,26 @@ margin-right: 5%;
     color: rgb(255, 255, 255);
     margin-left: 5%;
     margin-right: 5%;
-
+    
 }
 
 
 
 .about-me{
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
 }
 .friends{
-border-radius: 50%;
-width: 270px;
-height: 250px;
-margin-left: 10%;
-margin-top: 5%;
-
-
-
+    border-radius: 50%;
+    width: 270px;
+    height: 250px;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+    
+    
 }
 
 .friends2{
@@ -163,16 +163,16 @@ margin-top: 5%;
     margin-left: 35%;
     margin-top: 5%;
     
-    }
-    .grandma{
+}
+.grandma{
     border-radius: 50%;
     width: 270px;
     height: 250px;
     margin-left: 40%;
-  
     
-
-    }
+    
+    
+}
 
 
 .design{
@@ -198,27 +198,27 @@ margin-top: 5%;
 }
 
 .work1{
-width: 356px;
-height: 502px;
-
-
+    width: 356px;
+    height: 502px;
+    
+    
 }
 .work2{
-width: 356px;
-height: 502px;
-padding-left: 35%;
-
+    width: 356px;
+    height: 502px;
+    padding-left: 35%;
+    
 }
 .work3{
-width: 356px;
-height: 502px;
-padding-top: 10%;
+    width: 356px;
+    height: 502px;
+    padding-top: 10%;
 }
 .work4{
-width: 356px;
-height: 502px;
-padding-left: 35%;
-padding-top: 10%;
+    width: 356px;
+    height: 502px;
+    padding-left: 35%;
+    padding-top: 10%;
 }
 
 .website{
@@ -246,7 +246,7 @@ padding-top: 10%;
     width: 154px;
     display: flex;
     flex-direction: column;
-
+    
 }
 .hobbies{
     font-family: baloo2;
@@ -254,120 +254,51 @@ padding-top: 10%;
     color: rgb(255, 255, 255);
     margin-left: 5%;
     position: relative;
-
+    
 }
 .third-line{
     color: white;
     margin-left: 5%;
     margin-right: 5%;
-
-}
-
-.footer-line{
-    color: white;
-    margin-left: 5%;
-    margin-right: 5%;
     
 }
 
 
 
-
-.footer{
-    margin-left: 3%;
-    margin-right: 3%;
-    width: 1280px;
-    height: 211px;
+/* FOOTER */
+.footerline {
+    margin-top: 170px;
+    margin-bottom: 35px;
+}
+.footer {
+    color: white;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-between;
 }
-
-
-
-.footerone{
-    color: white;
-    font-family: helvetica Neue;
-    font-size: 16px;
-    flex-direction: column;
-    padding-top: 1%;
-    
-    
-   
-}
-.link1{
+.footerLeft span {
     color:#f44d00;
-
 }
-.socials{
+.footerLeft div {
     display: flex;
-    flex-direction: column;
-    padding-top: 1%;
-   
+    gap: 20px;
 }
-
-
-
-.information{
+.footerLeft img {
+    height: 20px;
+}
+.footerRight {
     display: flex;
-    flex-direction: column;
-    margin-left: 40%;
-    justify-content: center;
-    padding-bottom: 2%;
-    }
-  
-  
-  
-  .location{
-      font-family: helvetica Neue; 
-      color: white;
-      font-size:24px;
-      flex-direction: column;
-      padding-left: 5%;
-      display: flex;
-      
-  
-  
-      }
-  
-  .address{
-      font-family: helvetica Neue;
-      color: white;
-      font-size: 16px;
-      padding-left: 5%;
-      font-weight: 400;
-      line-height: 1px;
-      display: flex;
-  
-      
-  }
+    gap: 60px;
+}
+.footerRight h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+.footerRight p {
+    margin: 0;
+    line-height: 22px;
+}
+.footerRight .email{
+    color: #F44D00;
+}
+/* END OF FOOTER */
 
-  .information-2{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      
-  
-  }
-  .contact{
-      font-family: helvetica Neue; 
-      color: white;
-      font-size:24px;
-      flex-direction: column;
-  
-  
-  }
-  .email{
-      font-family: helvetica Neue;
-      color: #F44D00;
-      font-size: 16px;
-      display: flex;
-  }
-  .number{
-      font-family: helvetica Neue;
-      color: white;
-      font-size: 16px;
-      font-weight: 400;
-      display: flex;
-  }
-  
