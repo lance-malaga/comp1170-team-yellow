@@ -51,6 +51,7 @@ body>* {
 .about-me {
     display: flex;
     gap: 30px;
+    margin-top: 170px;
 }
 
 
