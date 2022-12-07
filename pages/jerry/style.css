@@ -92,7 +92,7 @@ body>* {
     align-items: center;
 }
 
-hr {
+.personal-projects hr {
     width: 400px;
     background: #f44D00;
     height: 10px;
