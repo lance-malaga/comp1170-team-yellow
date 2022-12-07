@@ -123,39 +123,39 @@ h1 {
 
 .shape1 {
     background: #F2CD5C;
-    border-radius: 100px 0px 0px 100px;
+    border-radius: 40% 0px 0px 40%;
 }
 .shape2 {
     background: #BAA8E1;
-    border-radius: 100px;
+    border-radius: 40%;
 }
 .shape3 {
     background: #F8D8B4;
-    border-radius: 100px 0px;
+    border-radius: 40% 0px;
 }
 .shape4 {
     background: #F44D00;
-    border-radius: 100px 0px;
+    border-radius: 40% 0px;
 }
 .shape5 {
     background: #4C5866;
-    border-radius: 0px 0px 100px 100px;
+    border-radius: 0px 0px 40% 40%;
 }
 .shape6 {
     background: #F2CD5C;
-    border-radius: 100px 0px;
+    border-radius: 40% 0px;
 }
 .shape7 {
     background: #4C5866;
-    border-radius: 0px 100px;
+    border-radius: 0px 40%;
 }
 .shape8 {
     background: #BAA8E1;
-    border-radius: 100px 0px 0px 0px;
+    border-radius: 40% 0px 0px 0px;
 }
 .shape9 {
     background: #F44D00;
-    border-radius: 100px 100px 0px 0px;
+    border-radius: 40% 40% 0px 0px;
 }
 
 .shape {
@@ -172,6 +172,7 @@ h1 {
     height: inherit;
 }
 .backFace {
+    width: 100%;
     position: absolute;
 	left: 0;
 	top: 0;
@@ -238,5 +239,17 @@ h1 {
     }
     .rightContainer {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    body {
+        margin: 0 30px 120px;
+    }
+    .shape {
+        height: 120px;
+    }
+    .backFace img {
+        height: 120px;
     }
 }
