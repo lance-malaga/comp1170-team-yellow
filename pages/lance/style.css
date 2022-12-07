@@ -403,7 +403,6 @@ body > * {
     .headerName {
         flex-direction: column;
         text-align: center;
-        /* width: 100%; */
     }
     .headerName h1 {
         font-size: 60px;
