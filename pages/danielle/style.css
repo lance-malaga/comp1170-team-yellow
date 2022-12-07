@@ -255,12 +255,34 @@ h1{
 .portfolio-container{
     display: flex;
 }
+
 .container-box5{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 498px;
+    border-radius: 25px;
 }
 .Blender{
-    width: 498px;
+    max-width: 498px;
     height: 264px;
     border-radius: 25px;
 }
+
+.images{
+    animation-name: image1;
+    animation: duration 4s;
+}
+@keyframes image1{
+    0%{
+        opacity: 100%;
+    }
+
+    50%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
+}
+
