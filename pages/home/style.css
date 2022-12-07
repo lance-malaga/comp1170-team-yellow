@@ -1,7 +1,7 @@
 body{
     background-color: #1f1f1f;
     max-width: 1680px;
-    margin: 45px 0 180px;
+    margin: 45px 0 100px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -279,6 +279,8 @@ body>* {
 .footerRight h1 {
     font-size: 24px;
     margin: 0 0 10px;
+    width: auto;
+    border: none;
 }
 .footerRight p {
     margin: 0;

@@ -1,4 +1,7 @@
-body{
+html {
+    scroll-behavior: smooth;
+}
+body {
     color: #1F1F1F;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -51,7 +54,7 @@ body > * {
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
-    margin: 80px auto;
+    padding: 80px 0;
     gap: 40px;
 }
 .headerName h1 {
@@ -78,12 +81,12 @@ body > * {
 }
 .profileContainer {
     justify-content: space-between;
-}
-.profileInfo {
-    width: 39%;
+    gap: 100px;
 }
 .profileNav {
     margin-left: 50px;
+    text-align: right;
+    width: 100%;
 }
 .profileInfo h1 {
     font-family: 'Baloo 2', cursive;
@@ -111,9 +114,6 @@ body > * {
     display: flex;
     flex-direction: column;
 }
-.profileNav {
-    text-align: right;
-}
 .profileNav p {
     border-bottom: 3px solid #1F1F1F;
     width: fit-content;
@@ -125,12 +125,15 @@ body > * {
     cursor: pointer;
     padding-bottom: 10px;
     transition: color 0.7s;
+    text-decoration: none;
+    transition: .7s color;
 }
 .profileNav a:hover {
     color: #F44D00;
 }
 .education {
     padding-bottom: 20px;
+    gap: 15px;
 }
 .education p {
     margin: 0;
@@ -170,32 +173,266 @@ body > * {
 }
 /* END OF DESIGN PORTFOLIO */
 
-/* ARCHITECTURAL PORTFOLIO */
+.blackBg {
+    max-width: none;
+    margin: 0;
+    padding-bottom: 100px;
+    background-color: #1F1F1F;
+}
+.blackBg > div {
+    max-width: 1680px;
+    margin: 0 80px;
+}
+.blackBg h1 {
+    margin: 0 0 50px;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 50px;
+    width: fit-content;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #F44D00;
+}
+.blackBg hr {
+    max-width: 1680px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
 
+/* ARCHITECTURAL PORTFOLIO */
+.archiPortfolio,
+.photography {
+    margin: 0;
+    padding: 100px 0 0;
+}
+.archiPortfolio div {
+    display: flex;
+    gap: 25px;
+}
+.archiPortfolio img:last-child {
+    margin-left: auto;
+}
 /* END OF ARCHITECTURAL PORTFOLIO */
 
+/* PHOTOGRAPHY */
+.photography div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.photography div > * {
+    width: 32%;
+}
+/* END OF PHOTOGRAPHY s */
+
+
+/* FOOTER */
+.footerline {
+    margin-top: 170px;
+    margin-bottom: 35px;
+}
+.footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.footerLeft p {
+    margin: 0 0 20px;
+}
+.footerLeft span {
+    color:#f44d00;
+}
+.footerLeft div {
+    display: flex;
+    gap: 20px;
+}
+.footerLeft img {
+    height: 20px;
+}
+.footerRight {
+    display: flex;
+    gap: 60px;
+}
+.footerRight h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    width: auto;
+    border: none;
+}
+.footerRight p {
+    margin: 0;
+    line-height: 22px;
+}
+.footerRight .email{
+    color: #F44D00;
+}
+/* END OF FOOTER */
 
 
 /* RESPONSIVENESS */
 /* BIGGER SCREENS */
-@media screen and (min-width: 1760px){
-    body > * {
+@media screen and (min-width: 1800px){
+    body > *,
+    .blackBg > div {
         margin: 0 auto;
     }
+    .blackBg hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-@media screen and (min-width: 1410px){
-    
+@media screen and (max-width: 1410px){
+    /* DESIGN */
+    .designPortfolio div,
+    .photography div {
+        justify-content: center;
+    }
+    .designPortfolio div > *,
+    .photography div > * {
+        width: 30%;
+    }
+    .designPortfolio div img:nth-child(2) {
+        width: 30%;
+        border-radius: 7%;
+        object-fit: cover;
+    }
+    /* ARCHITECUTRE */
+    .archiPortfolio div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .archiPortfolio img:last-child {
+        display: none;
+    }
 }
 /* SMALLER SCREENS */
-@media screen and (max-width: 1023px){
-    .nav-categories{
+@media screen and (max-width: 1200px){
+    .headerName {
+        width: min-content;
+        margin: 0 auto;
+    }
+    .profileContainer {
+        flex-direction: column-reverse;
+        align-items: center;
         gap: 50px;
+    }
+    .profileInfo {
+        width: 100%;
+        display:  flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .profileInfo div:first-child {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1023px){
+    /* NAVBAR */
+    .nav-categories {
+        gap: 50px;
+    }
+    .profileRight {
+        flex-direction: column-reverse;
+    }
+    .profileNav {
+        margin: 0 0 50px;
+        text-align: center;
+        justify-content: center;
+    }
+    .profileNav div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .profileNav p {
+        margin: 30px auto 20px;
+    }
+    .profileInfo {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .profileInfo div:first-child,
+    .profileInfo div {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footerLeft div {
+        justify-content: center;
+    }
+    .footerRight {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body > *,
+    .blackBg > div {
+        margin: 0 30px;
+    }
+    .blackBg hr {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    /* DESIGN */
+    .designPortfolio div,
+    .photography div {
+        gap: 15px;
+    }
+    /* FOOTER */
+    .footerRight {
+        flex-direction: column;
+        gap: 40px;
     }
 }
 
 @media screen and (max-width: 700px){
-    body{
-        margin: 45px 20px 0px;
+    /* NAVBAR */
+    .nav-categories {
+        gap: 20px;
+    }
+    /* PROFILE */
+    .headerName {
+        flex-direction: column;
+        text-align: center;
+        /* width: 100%; */
+    }
+    .headerName h1 {
+        font-size: 60px;
+        line-height: 50px;
+    }
+    /* DESIGN */
+    .designPortfolio div > *,
+    .photography div > * {
+        width: 45%;
+    }
+    .designPortfolio div img:nth-child(2) {
+        width: 45%;
+    }
+    /* ARCHITECTURE */
+    .archiPortfolio img, 
+    .profileRight img {
+        width: 100%;
+        max-height: 700px;
+    }
+}
 
+@media screen and (max-width: 425px){
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .designPortfolio h1,
+    .blackBg h1 {
+        font-size: 30px;
     }
 }
