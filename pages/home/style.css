@@ -115,8 +115,7 @@ body>* {
 
 /* END OF TOP SECTION */
 
-
-/* Recent Works */
+/* RECENT WORKS */
 .WholeBody{
     display: flex;
     max-width: 1680px;
@@ -219,36 +218,78 @@ body>* {
     flex-direction: row;
 
 }
+/* END OF RECENT WORKS */
 
-/* end of recent works*/
 /* TEAM SECTION */
-.teamSection{
+.teamSection {
     font-family: 'Roboto', sans-serif;
 }
-.subtitle h1{
+.subtitle h1 {
     color: #FFFFFF;
     font-size: 50px;
     font-weight: 300;
     margin: 0;
 }
-.subtitle span{
+.subtitle span {
     font-weight: 700;
 }
-#orange{
+#orange {
     color: #F44D00;
 }
-.aboveImages{
+.aboveImages {
    display: flex;
    gap: 65px;
    margin-top: 50px;
    margin-bottom: 70px;
 }
-.bellowImages{
+.bellowImages {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 /* END OF TEAM SECTION */
+
+/* FOOTER */
+.footerline {
+    margin-top: 170px;
+    margin-bottom: 35px;
+}
+.footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.footerLeft p {
+    margin: 0 0 20px;
+}
+.footerLeft span {
+    color:#f44d00;
+}
+.footerLeft div {
+    display: flex;
+    gap: 20px;
+}
+.footerLeft img {
+    height: 20px;
+}
+.footerRight {
+    display: flex;
+    gap: 60px;
+}
+.footerRight h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+.footerRight p {
+    margin: 0;
+    line-height: 22px;
+}
+.footerRight .email{
+    color: #F44D00;
+}
+/* END OF FOOTER */
+
+
 /* RESPONSIVENESS */
 /* BIGGER SCREENS */
 @media screen and (min-width: 1760px){
@@ -259,9 +300,26 @@ body>* {
 
 /* SMALLER SCREENS */
 @media screen and (max-width: 1023px) {
+    /* NAVBAR */
     .nav-categories {
         gap: 50px;
     }
+    /* END OF NAVBAR */
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footerLeft div {
+        justify-content: center;
+    }
+    .footerRight {
+        margin-top: 40px;
+    }
+    /* END OF FOOTER */
 }
 
 @media screen and (max-width: 700px) {
@@ -269,4 +327,11 @@ body>* {
         margin: 45px 20px 0px;
 
     }
+
+    /* FOOTER */
+    .footerRight {
+        flex-direction: column;
+        gap: 40px;
+    }
+    /* END OF FOOTER */
 }

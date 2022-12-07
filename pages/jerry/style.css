@@ -1,9 +1,53 @@
 body {
-    max-width: 1680px;
     background-color: #1f1f1f;
-    margin: 45px 80px 180px;
+    max-width: 1680px;
+    margin: 45px 0 180px;
+    font-family: 'Roboto', sans-serif;
+}
+body>* {
+    margin: 0 80px;
+}
+/* NAVBAR */
+#navbar {
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 11px;
 }
 
+.logo-main span {
+    margin-right: 5px;
+}
+
+.logo-main a {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+}
+
+.nav-categories {
+    display: flex;
+    gap: 150px;
+}
+
+.nav-categories a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#red {
+    color: #F44D00;
+}
+
+.navbar-line {
+    height: 1px;
+    background-color: white;
+}
+
+/* END OF NAVBAR */
 .about-me {
     display: flex;
     gap: 30px;
@@ -43,7 +87,7 @@ body {
 .projects {
     display: flex;
     max-width: 1680px;
-    width: 100%;
+    width: 1680px;
     align-items: center;
 }
 
@@ -57,6 +101,7 @@ hr {
 .title {
     font-size: 75px;
     color: #BEA7E5;
+    width: 550px;
 }
 
 .personal {
@@ -204,4 +249,90 @@ hr {
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+/* FOOTER */
+.footerline {
+    margin-top: 170px;
+    margin-bottom: 35px;
+}
+.footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.footerLeft p {
+    margin: 0 0 20px;
+}
+.footerLeft span {
+    color:#f44d00;
+}
+.footerLeft div {
+    display: flex;
+    gap: 20px;
+}
+.footerLeft img {
+    height: 20px;
+}
+.footerRight {
+    display: flex;
+    gap: 60px;
+}
+.footerRight h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+.footerRight p {
+    margin: 0;
+    line-height: 22px;
+}
+.footerRight .email{
+    color: #F44D00;
+}
+/* END OF FOOTER */
+
+
+/* RESPONSIVENESS */
+/* BIGGER SCREENS */
+@media screen and (min-width: 1760px){
+    body {
+        margin: 45px auto 180px;
+    }
+}
+
+/* SMALLER SCREENS */
+@media screen and (max-width: 1023px) {
+    /* NAVBAR */
+    .nav-categories {
+        gap: 50px;
+    }
+    /* END OF NAVBAR */
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footerLeft div {
+        justify-content: center;
+    }
+    .footerRight {
+        margin-top: 40px;
+    }
+    /* END OF FOOTER */
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 45px 20px 0px;
+
+    }
+
+    /* FOOTER */
+    .footerRight {
+        flex-direction: column;
+        gap: 40px;
+    }
+    /* END OF FOOTER */
 }
