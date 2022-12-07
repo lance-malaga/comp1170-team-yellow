@@ -86,7 +86,7 @@ body > * {
 .profileNav {
     margin-left: 50px;
     text-align: right;
-    width: 100%;
+    width: max-content;
 }
 .profileInfo h1 {
     font-family: 'Baloo 2', cursive;
@@ -335,6 +335,7 @@ body > * {
     }
     .profileNav {
         margin: 0 0 50px;
+        width: 100%;
         text-align: center;
         justify-content: center;
     }
