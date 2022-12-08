@@ -92,10 +92,35 @@ body > * {
 }
 .topOrangeSection div {
     max-width: 1680px;
-    margin: 0 80px;
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 200px;
+}
+.pixelProfile {
+    position: relative;
+}
+.pixelProfile div {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    transition: .7s opacity;
+}
+.pixelProfile div:hover {
+    opacity: 1;
+}
+.pixelProfileGif {
+    height: 200px;
+    position: absolute;
+    bottom: -18px;
+    z-index: 1;
+}
+.pixelProfileShape {
+    position: relative;
+    top: -17px;
+}
+.daniellePixel {
+    bottom: -20px;
 }
 /* END OF TOP SECTION */
 
@@ -128,13 +153,28 @@ body > * {
     align-items: center;
     margin-top: 70px;
 }
-.recentTop > img,
-.recentBottom > img {
+.recentTop > .pixelProfile,
+.recentBottom > .pixelProfile {
     margin: 0 auto;
 }
 .bookCovers {
     display: flex;
     gap: 30px;
+}
+.briPixelGif {
+    bottom: 191px;
+    left: 198px;
+}
+.briPixelShape {
+    position: absolute;
+    bottom: 3px;
+}
+.ivaPixelGif {
+    bottom: 4px;
+}
+.ivaPixelShape {
+    position: absolute;
+    bottom: 42px;
 }
 /* END OF RECENT WORKS */
 
@@ -168,6 +208,28 @@ body > * {
 }
 .bellowImages > img {
     margin: 0 auto;
+}
+.aboveImages > div,
+.bellowImages > div {
+    position: relative;
+}
+.profileItem {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: .7s opacity;
+}
+.profileItem:hover {
+    opacity: 1;
+}
+.lanceItem {
+    left: -29px;
+}
+.ivonaItem {
+    left: -10px;
+}
+.danielleItem {
+    top: -6px;
 }
 /* END OF TEAM SECTION */
 
