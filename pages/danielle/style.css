@@ -247,20 +247,129 @@ h1{
     font-size: 16px;
     font-weight: 700;
     color: white;
-    width: fit-content;
+    width: max-content;
     padding: 10px;
     margin-top: 50px;
 }
 
 .portfolio-container{
     display: flex;
+    flex-direction: row;
+    gap: 430px;
 }
-.container-box5{
+/* .container-box5{
     display: flex;
     flex-direction: column;
-}
-.Blender{
+    position: relative;
+} */
+.donut, .dungeon, .room{
     width: 498px;
-    height: 264px;
     border-radius: 25px;
+    position: absolute;
+} 
+
+
+ /* .donut, .dungeon{
+    animation-name: slideFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+}  */
+  @keyframes slideFadeInOut{
+    0%{
+        opacity: 100%;
+    }
+    17%{
+        opacity: 100%;
+    }
+    25%{
+        opacity: 0%;
+    }
+    92%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+
+.donut{
+    animation-name: first;
+    animation: first 6s;
+    animation-delay: 6s;   
+}
+
+@keyframes second{
+    0%{
+        opacity: 0%;
+    }
+    17%{
+        opacity: 100%;
+    }
+    25%{
+        opacity: 50%;
+    }
+    92%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.dungeon {
+    animation-name: second;
+    animation: second 5s ;
+    animation-delay: 4s;
+}    
+
+@keyframes third {
+    0%{
+        opacity: 0;
+    }
+    17%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 0%;
+    }
+    92%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 50%;
+    }
+}
+.room{
+    animation-name: third;
+    animation: third 5s;
+    animation-delay: 2s; 
+    height: 280px;
+} 
+
+
+.anim-loop{
+    width: 498px;
+    height: 280px;
+    border-radius: 25px;
+    animation: infinite;
+    position: absolute;
+}
+
+.blender-anim{
+    display:flex;
+    flex-direction: column;
+  
+}
+
+.gallery-container{
+    position: relative;
+    margin-top: 335px;
+    grid-template-rows:  repeat(4);
+    grid-template-columns: repeat(3);
+}
+.illustration{
+    padding: 10px;
 }
