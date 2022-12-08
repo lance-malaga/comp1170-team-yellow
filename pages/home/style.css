@@ -36,9 +36,17 @@ body > * {
 .nav-categories a {
     text-decoration: none;
     color: #FFFFFF;
+    transition: .7s color;
+}
+.nav-categories a:hover {
+    color: #F44D00;
 }
 #red {
     color: #F44D00;
+    transition: .7s color;
+}
+#red:hover {
+    color: #FFFFFF;
 }
 .navbar-line {
     height: 1px;
