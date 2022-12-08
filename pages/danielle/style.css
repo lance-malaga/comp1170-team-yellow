@@ -7,7 +7,12 @@ body{
     margin: 45px 80px 0px;
     align-content: center;
     font-family: Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px 80px 0px 80px;
 }
+/* body > *{
+    margin: 20px;
+} */
 
 @media screen and (min-width: 1960px){
     body {
@@ -15,11 +20,7 @@ body{
     }
 }
 
-.main-container{
-    max-width: 60%;
-    margin: 0 auto;
-}
-/* navbar */
+
 #navbar {
     font-family: Helvetica, sans-serif;
     font-weight: 700;
@@ -28,6 +29,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 11px;
+    margin: 45px 45px 0px 45px;
 }
 
 .logo-main span {
@@ -58,6 +60,7 @@ body{
 .navbar-line {
     height: 1px;
     background-color: white;
+    margin: 0px 45px 0px;
 }
 
 /*end */
@@ -102,13 +105,10 @@ a{
 .container{
     margin-left: 25px;
 }
-.daniella-image{
-    height: 530px
-}
 .introduction{
     display: flex;
-    justify-content: space-between;
     margin-top: 107px;
+    justify-content: center;
 }
 
 
@@ -177,6 +177,7 @@ a:hover{
 .about-me{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 97px;
 }
 
@@ -208,7 +209,7 @@ a:hover{
     color: white;
     display: flex;
     justify-content: space-between;
-    padding-left: 155px;
+    padding-left: 55px;
     width: 400px;
 }
 
@@ -231,6 +232,9 @@ a:hover{
 .container-box4{
     margin-top: 75px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
 }
 
 .software{
@@ -241,7 +245,6 @@ a:hover{
 
 #pixel-character{
     height: 540px;
-    margin-left: 100px;
 }
 
 .titles-purple { 
@@ -253,8 +256,22 @@ a:hover{
     padding-bottom: 10px;
     width: fit-content;
 }
-.titles-orange, .titles-purple{
+.titles-purple2{
+    border-bottom:  8px solid #BAA8E1;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 10px;
+    width: fit-content;
+}
+/* .titles-orange, .titles-purple{
     margin: 0;
+} */
+
+.hobby-container{
+    max-width: fit-content;
+    margin: 0 auto;
 }
 .hobbies{
     display: flex;
@@ -293,7 +310,9 @@ a:hover{
 .portfolio-container{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 160px;
 }
 
 .container-box5{
@@ -316,6 +335,9 @@ a:hover{
     width: 498px;
     border-radius: 25px;
 } 
+#gif-resize{
+    width: 517px;
+}
 
 .container-box6{
     display: flex;
@@ -337,27 +359,15 @@ a:hover{
 }
 
 .gallery-container{
-    /* position: relative; */
     margin-top: 50px;
-    /* display:grid;  */
-    /* display: flex; */
-    /* flex-wrap: wrap;
-    gap: 10px; */
+    margin-left: 160px;
 }
 .gallery{
-    /* width: 100%;
-    display: grid; */
-    /* grid-template-columns: repeat(4) ;
-    grid-template-rows: repeat(3); */
-    /* grid-template:
-        "a b c" 100px
-        "d e f" 100px
-        " g " 100px
-    ; */
     margin-top: 35px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
 }
 
 
@@ -371,6 +381,8 @@ a:hover{
     display: flex;
     justify-content: space-between;
     font-family: Helvetica, sans-serif;
+    padding-bottom: 100px;
+    margin: 0 auto;
 }
 .footerLeft p {
     margin: 0 0 20px;
@@ -404,9 +416,415 @@ a:hover{
 }
 /* END OF FOOTER */
 
-/* @media screen and (max-width:) {
-    #navbar {
-        
+/* responsive screens */
+/* @media screen and (max-width:2563px){
+    .portfolio-container{
+
+    }
+    .container-box5{
+
+    }
+    .container-box6{
+
     }
 } */
+@media screen and(max-width:1950px) {
+    .body{
+        padding-left:80px;
+    }
+    .footer{
+       padding-left: 190px;
+    }
+}
+@media screen and (max-width:1175px) {
+    .introduction{
+        font-size: smaller;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0px -277px 93px;
+    }
+    .daniella-image{
+        position: relative;
+        top: 190px;
+        right: 140px;
+        z-index: 1;
+    }
+    .intro-right{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .greetings{
+        margin: 0;
+        bottom: 340px;
+        position: relative;
+        right: 3px;
+    }
+    .little-text{
+        bottom: 350px;
+        left: 315px;
+        position: relative;
+    } 
+    .description{
+        left: 315px;
+        bottom: 350px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 222px;
+    }
+    .container-box1{
+        width: 210px;
+        bottom: 345px;
+        position: relative;
+        padding: 25px 75px;
+    }
+    .exclamation{
+        margin: 0;
+    }
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin-top: 0px;
+    }
+    .container-box3{
+        padding: 0px;
+    }
+    .container-box4{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    #pixel-character{
+        width: 432px;
+        height: 432px;
+    }
+    .hobby-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        text-align: left;
+        right: 80px;
+    }
+    .hobbies{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px ;
+        margin-left: 260px;
+    }
+    .portfolio-container, .container-box5, .container-box6, .blender-anim {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
 
+    .blender-anim{
+        height: 220px;
+    }
+    .titles-orange{
+        margin-top: 30px;
+    }
+    #gif-resize{
+        width: 483px;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        align-items: center;
+    }
+    .gallery-container{
+        margin: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 350px;
+    }
+    .titles-purple, .titles-orange{
+        text-align: left;
+    }
+    .childg{
+        width: 390px;
+    }
+
+}
+
+@media screen and (max-width:695px){
+    #navbar{
+        /* margin: 45px 45px 0px 45px; */
+        /* margin: 0px 45px 0px 0px; */
+        width: 127%;
+        margin: 0px 0px 0px 60px;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .navbar-line{
+        margin: 0px 45px 0px 0px;
+    }
+    .introduction{
+        position: relative;
+    }
+    .intro-right{
+
+    }
+    .daniella-image{
+        position: relative;
+        right: 37px;
+    }
+    .little-text{
+        position: relative;
+        top: 28px;
+        left: 43px;
+    } 
+    .description{
+        position: relative;
+        top: 10px;
+        left: 43px;
+        width: 215px;
+    }
+    .exclamation{
+        top: 60px;
+        font-size: 115px;
+        position: absolute;
+        left: 242px;
+    }
+    .container-box1{
+        margin-top: 365px;
+    }
+    .art-resize{
+        width: 345px;
+    }
+}
+@media screen and (max-width:698px){
+    #navbar{
+        margin: 0px 45px 0px -75px;
+    }
+}
+@media screen and (max-width:505px){
+
+    #navbar{
+        margin: 45px 0px 0px 49px;
+        width: 100%;
+    }
+    .navbar-line{
+        width: 100%;
+        margin-left: 45px;
+    }
+    .introduction{
+        margin-left: 275px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .daniella-image{
+        height: 380px;
+    }
+    .intro-right{
+        margin-top: 30px;
+    }
+    .container-box2{
+        padding: 15px 0px;
+        margin-left: 30px;
+    }
+    .about-me{
+        margin-left: 85px;
+    }
+    .hobby-container{
+        margin-left: 100px;
+    }
+    .portfolio-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .gallery{
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 90px;
+    }
+    .art-resize{
+        width: 305px;
+        height: 220px;
+    }
+    #pixel-character{
+        width: 365px;
+        height: 375px;
+        position: absolute;
+        top: 1440px;
+        left: 235px;
+    }
+    .container-box2{
+        margin-left: 60px;
+    }
+    .container-box3{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .skill-progress{
+        margin-left: 185px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #navbar{
+        width: 127%;
+        margin: 0px 0px 0px 60px;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .navbar-line{
+        width: 165%;
+        margin: 0px 25px 0px 25px;
+    }
+    .nav-categories{
+        
+    }
+    .footer{
+        display: flex;
+        gap: 53px;
+        flex-direction: column;
+        margin-left: 54px;
+        width: 216px;
+        align-items: center;
+        padding: 30px;
+    }
+    .footerline{
+        width: 200%;
+    }
+    .portfolio-container{
+        margin-left: -45px;
+    }
+    .gallery-container{
+        margin-left: 100px;
+    }
+    .titles-purple{
+        width: 265px;
+        margin-left: 230px;
+    }
+}
+@media screen and (max-width:320px) {
+    #navbar{
+        margin: 0px 41px 0px 150px;
+        display: flex;
+        /* width: 72px; */
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-categories{
+        font-size: 20px;
+        margin: 0px 41px 0px 130px;
+        /* width: 150%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: max-content;
+    }
+    .logo-main a{
+        font-size: 24px;
+    }
+    .navbar-line{
+        width: 385%;
+        margin-left: 45px;
+    }
+    .introduction{
+        margin-left: 330px;
+    }
+    .about-me{
+        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-box3{
+        display: flex;
+        flex-direction: row;
+        letter-spacing: 2px;
+    }
+    #pixel-character{
+        position: absolute;
+        top: 1810px;
+        left: 130px;
+    }
+    .skill-progress{
+        margin-top: 400px;
+        margin-left: 280px;
+    }
+    .hobby-container{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .hobbies{
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 400px;
+        gap: 35px;
+    }
+    .pixel-gifs{
+        width: 250px;
+        height: 250px;
+    }
+
+    .gallery-container{
+        display: flex;
+        margin-left: 170px;
+    }
+    .titles-purple{
+        margin-left: -55px;
+    }
+    p{
+        font-size: 20px;
+        width: 308px;
+    }
+    .portfolio-container{
+        margin-left: -10px;
+    }
+    .black-text{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .footerline{
+        width: 415%;
+        
+    }
+    .footer{
+        margin: 0px 54px 80px 172px;
+        gap: 80px;
+    }
+    .footerLeft{
+        margin-left: -120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .titles-purple2{
+        margin-left: 120px;
+    }
+    .little-text{
+        width: 220px;
+    }
+    .gallery{
+        align-content: center;
+        display: flex;
+        margin-left: 130px;
+        flex-direction: column;
+    }
+    .exclamation{
+        color: transparent;
+    }
+}
