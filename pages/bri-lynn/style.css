@@ -4,11 +4,7 @@ body{
     margin: 45px 80px 0px;
     
 }
-@media screen and (min-width: 1550px) {
-    .body{
-        margin: 45px auto 0px;
-    }
-}
+
 #navbar{
     font-family: Helvetica, sans-serif;
     font-weight: 700;
@@ -151,6 +147,7 @@ a{
     height: 250px;
     margin-left: 10%;
     margin-top: 5%;
+    border: 5px solid #F44D00;
     
     
     
@@ -162,6 +159,7 @@ a{
     height: 250px;
     margin-left: 35%;
     margin-top: 5%;
+    border: 5px solid #F44D00;
     
 }
 .grandma{
@@ -169,6 +167,7 @@ a{
     width: 270px;
     height: 250px;
     margin-left: 40%;
+    border: 5px solid #F44D00;
     
     
     
@@ -195,6 +194,7 @@ a{
     padding-top: 5%;
     
     
+    
 }
 
 .work1{
@@ -202,17 +202,20 @@ a{
     height: 502px;
     
     
+    
 }
 .work2{
     width: 356px;
     height: 502px;
     padding-left: 35%;
+   
     
 }
 .work3{
     width: 356px;
     height: 502px;
     padding-top: 10%;
+  
 }
 .work4{
     width: 356px;
@@ -302,3 +305,66 @@ a{
 }
 /* END OF FOOTER */
 
+
+/* RESPONSIVENESS */
+/* BIGGER SCREENS */
+
+@media screen and (min-width: 1500px) {
+  .container{
+    margin: 45px auto 0px;
+  }
+  .me{
+    margin: 45px auto 0px;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+    .body{
+        margin: 45px auto 0px;
+    }
+}
+@media screen and (min-width: 1800px){
+   .designwork{
+    margin: 0 auto;
+   }
+}
+@media screen and (min-width: 1800px){
+.about-me{
+    margin: 0 auto;
+}
+}
+/* SMALLER SCREENS */
+@media screen and (max-width: 1200px){
+     /* FOOTER */
+     .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footerLeft div {
+        justify-content: center;
+    }
+    .footerRight {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 425px){
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .me{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 700px){
+    /* NAVBAR */
+    .nav-categories {
+        gap: 20px;
+    }
+}
