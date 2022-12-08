@@ -1,7 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-color: #1f1f1f;
     max-width: 1680px;
-    margin: 45px 0 180px;
+    margin: 45px 0 100px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -143,7 +146,6 @@ body>* {
 .texts {
     display: flex;
     flex-direction: column;
-
 }
 
 .firstText {
@@ -151,7 +153,6 @@ body>* {
     font-size: 30px;
     justify-content: end;
     margin-bottom: -80px;
-
 }
 
 .secondText {
@@ -171,7 +172,6 @@ body>* {
     display: flex;
     flex-direction: column;
     width: 720px;
-
 }
 
 .threeimage {
@@ -203,8 +203,7 @@ body>* {
 .first{
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: center; 
 }
 
 .BookCovers{
@@ -216,7 +215,6 @@ body>* {
 .lastTwo {
     display: flex;
     flex-direction: row;
-
 }
 /* END OF RECENT WORKS */
 
@@ -237,10 +235,10 @@ body>* {
     color: #F44D00;
 }
 .aboveImages {
-   display: flex;
-   gap: 65px;
-   margin-top: 50px;
-   margin-bottom: 70px;
+    display: flex;
+    gap: 65px;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 .bellowImages {
     display: flex;
@@ -279,6 +277,8 @@ body>* {
 .footerRight h1 {
     font-size: 24px;
     margin: 0 0 10px;
+    width: auto;
+    border: none;
 }
 .footerRight p {
     margin: 0;
@@ -305,7 +305,7 @@ body>* {
         gap: 50px;
     }
     /* END OF NAVBAR */
-
+    
     /* FOOTER */
     .footer {
         flex-direction: column;
@@ -324,14 +324,27 @@ body>* {
 
 @media screen and (max-width: 700px) {
     body {
-        margin: 45px 20px 0px;
-
+        margin: 45px 20px 0px; 
     }
-
+    /* NAVBAR */
+    .nav-categories {
+        gap: 20px;
+    }
+    /* END OF NAVBAR */
+    
     /* FOOTER */
     .footerRight {
         flex-direction: column;
         gap: 40px;
     }
     /* END OF FOOTER */
+}
+
+@media screen and (max-width: 425px){
+    /* NAVBAR */
+    #navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* END OF NAVBAR */
 }

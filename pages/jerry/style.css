@@ -4,9 +4,11 @@ body {
     margin: 45px 0 180px;
     font-family: 'Roboto', sans-serif;
 }
+
 body>* {
     margin: 0 80px;
 }
+
 /* NAVBAR */
 #navbar {
     font-weight: 700;
@@ -215,6 +217,7 @@ body>* {
     color: #495867;
     margin-top: 20px;
 }
+
 .Photoimages1 {
     display: flex;
     margin-top: 30px;
@@ -227,6 +230,7 @@ body>* {
     flex-direction: row;
     gap: 30px;
 }
+
 .Photoimages2 {
     display: flex;
     margin-top: 30px;
@@ -239,6 +243,7 @@ body>* {
     flex-direction: row;
     gap: 30px;
 }
+
 .Photoimages3 {
     display: flex;
     margin-top: 30px;
@@ -251,62 +256,158 @@ body>* {
     flex-direction: row;
     gap: 30px;
 }
+
+.twoImages IMG {
+    border-radius: 7%;
+}
+
+.graph IMG{
+  border-radius: 7%;
+}
+.imagesPhoto1 IMG{
+    border-radius: 7%;
+}
+.imagesPhoto2 IMG{
+    border-radius: 7%;
+}
+.imagesPhoto3 IMG{
+    border-radius: 7%;
+}
 /* FOOTER */
 .footerline {
     margin-top: 170px;
     margin-bottom: 35px;
 }
+
 .footer {
     color: white;
     display: flex;
     justify-content: space-between;
 }
+
 .footerLeft p {
     margin: 0 0 20px;
 }
+
 .footerLeft span {
-    color:#f44d00;
+    color: #f44d00;
 }
+
 .footerLeft div {
     display: flex;
     gap: 20px;
 }
+
 .footerLeft img {
     height: 20px;
 }
+
 .footerRight {
     display: flex;
     gap: 60px;
 }
+
 .footerRight h1 {
     font-size: 24px;
     margin: 0 0 10px;
 }
+
 .footerRight p {
     margin: 0;
     line-height: 22px;
 }
-.footerRight .email{
+
+.footerRight .email {
     color: #F44D00;
 }
+
 /* END OF FOOTER */
 
 
 /* RESPONSIVENESS */
 /* BIGGER SCREENS */
-@media screen and (min-width: 1760px){
+@media screen and (min-width: 1760px) {
     body {
         margin: 45px auto 180px;
     }
 }
 
 /* SMALLER SCREENS */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
+
     /* NAVBAR */
     .nav-categories {
         gap: 50px;
     }
+
     /* END OF NAVBAR */
+
+    .about-me {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .firstText{
+        font-size: 60px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .school{
+        font-size: 40px;
+    }
+    .stuff{
+        font-size: 40px;
+    }
+    .video{
+        font-size: 40px;
+    }
+    .Photo{
+        font-size: 40px;
+    }
+
+    .projects {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .twoImages {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .myday IMG {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        justify-content: normal;
+    }
+
+    .graph {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagesPhoto1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagesPhoto2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagesPhoto3 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     /* FOOTER */
     .footer {
@@ -315,19 +416,38 @@ body>* {
         align-items: center;
         text-align: center;
     }
+
     .footerLeft div {
         justify-content: center;
     }
+
     .footerRight {
         margin-top: 40px;
     }
+
     /* END OF FOOTER */
+
 }
 
+@media screen and (max-width: 900px) {
+    .title{
+        font-size: 30px;
+    }
+}
 @media screen and (max-width: 700px) {
-    body {
+    body,
+    body > * {
         margin: 45px 20px 0px;
+    }
 
+    /* NAVBAR */
+    .nav-categories {
+        gap: 20px;
+    }
+
+    /* END OF NAVBAR */
+    .title{
+        font-size: 20px;
     }
 
     /* FOOTER */
@@ -335,5 +455,127 @@ body>* {
         flex-direction: column;
         gap: 40px;
     }
+
     /* END OF FOOTER */
+}
+
+@media screen and (max-width: 425px) {
+
+    /* NAVBAR */
+    #navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    /* END OF NAVBAR */
+
+    .firstText{
+        font-size: 30px;
+    }
+    .title{
+        font-size: 12px;
+    }
+    .school{
+        font-size: 30px;
+    }
+    .stuff{
+        font-size: 30px;
+    }
+    .video{
+        font-size: 30px;
+    }
+    .Photo{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    .Columbia p{
+        font-size: 10px;
+    }
+    .Simon p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .about-me {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .about-me IMG {
+        width: 200px;
+        height: 200px;
+    }
+
+    
+
+    .projects {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .twoImages {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .twoImages IMG {
+        width: 200px;
+        height: 200px;
+    }
+
+    .myday IMG {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        justify-content: normal;
+    }
+
+    .graph {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .graph IMG{
+        width: 200px;
+        height: 200px;
+    }
+
+    .imagesPhoto1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagesPhoto1 IMG {
+        width: 200px;
+        height: 200px;
+    }
+
+    .imagesPhoto2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .imagesPhoto2 IMG {
+        width: 200px;
+        height: 200px;
+    }
+
+    .imagesPhoto3 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagesPhoto3 IMG {
+      width: 200px;
+      height: 200px;
+    }
 }
