@@ -1,12 +1,59 @@
 body {
-    max-width: 1680px;
     background-color: #1f1f1f;
-    margin: 45px 80px 180px;
+    max-width: 1680px;
+    margin: 45px 0 180px;
+    font-family: 'Roboto', sans-serif;
 }
 
+body>* {
+    margin: 0 80px;
+}
+
+/* NAVBAR */
+#navbar {
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 11px;
+}
+
+.logo-main span {
+    margin-right: 5px;
+}
+
+.logo-main a {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+}
+
+.nav-categories {
+    display: flex;
+    gap: 150px;
+}
+
+.nav-categories a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#red {
+    color: #F44D00;
+}
+
+.navbar-line {
+    height: 1px;
+    background-color: white;
+}
+
+/* END OF NAVBAR */
 .about-me {
     display: flex;
-    gap: 90px;
+    gap: 30px;
+    margin-top: 170px;
 }
 
 
@@ -22,6 +69,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 100px;
+    color: #495867;
 
 }
 
@@ -31,7 +79,7 @@ body {
 }
 
 .text p {
-    color: #f1f1f1;
+    color: #f8f4f9;
 }
 
 .personal-projects {
@@ -42,17 +90,492 @@ body {
 .projects {
     display: flex;
     max-width: 1680px;
-    width: 100%;
+    width: 1680px;
     align-items: center;
 }
 
-hr {
-    width: 500px;
+.personal-projects hr {
+    width: 400px;
     background: #f44D00;
     height: 10px;
     border: none;
 }
-.title{
+
+.title {
     font-size: 75px;
-    color: #f1f1f1;
+    color: #BEA7E5;
+    width: 550px;
+}
+
+.personal {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.twoImages {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.education {
+    display: flex;
+    margin-top: 100px;
+}
+
+.university {
+    display: flex;
+    max-width: 1680px;
+    width: 100%;
+    align-items: center;
+}
+
+.school {
+    font-size: 75px;
+    color: #BEA7E5;
+}
+
+.education hr {
+    width: 400px;
+    background: #f44D00;
+    height: 4px;
+    border: none;
+    margin-left: 100px;
+}
+
+.College {
+    margin-top: 100px;
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.College p {
+    color: #f8f4f9;
+}
+
+.Simon {
+    margin-top: 50px;
+}
+
+.myday {
+    display: flex;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hobbies {
+    display: flex;
+}
+
+.hobbies hr {
+    width: 1000px;
+    background: #f44D00;
+    height: 4px;
+    border: none;
+    margin-left: 100px;
+}
+
+.stuff {
+    font-size: 75px;
+    color: #BEA7E5;
+}
+
+.bies {
+    display: flex;
+    max-width: 1680px;
+    width: 100%;
+    align-items: center;
+}
+
+.video {
+    font-size: 50px;
+    color: #495867;
+}
+
+.Videographyimages {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.Photo {
+    font-size: 50px;
+    color: #495867;
+    margin-top: 20px;
+}
+
+.Photoimages1 {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagesPhoto1 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.Photoimages2 {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagesPhoto2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.Photoimages3 {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagesPhoto3 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.twoImages IMG {
+    border-radius: 7%;
+}
+
+.graph IMG{
+  border-radius: 7%;
+}
+.imagesPhoto1 IMG{
+    border-radius: 7%;
+}
+.imagesPhoto2 IMG{
+    border-radius: 7%;
+}
+.imagesPhoto3 IMG{
+    border-radius: 7%;
+}
+/* FOOTER */
+.footerline {
+    margin-top: 170px;
+    margin-bottom: 35px;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLeft p {
+    margin: 0 0 20px;
+}
+
+.footerLeft span {
+    color: #f44d00;
+}
+
+.footerLeft div {
+    display: flex;
+    gap: 20px;
+}
+
+.footerLeft img {
+    height: 20px;
+}
+
+.footerRight {
+    display: flex;
+    gap: 60px;
+}
+
+.footerRight h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.footerRight p {
+    margin: 0;
+    line-height: 22px;
+}
+
+.footerRight .email {
+    color: #F44D00;
+}
+
+/* END OF FOOTER */
+
+
+/* RESPONSIVENESS */
+/* BIGGER SCREENS */
+@media screen and (min-width: 1760px) {
+    body {
+        margin: 45px auto 180px;
+    }
+}
+
+/* SMALLER SCREENS */
+@media screen and (max-width: 1024px) {
+
+    /* NAVBAR */
+    .nav-categories {
+        gap: 50px;
+    }
+
+    /* END OF NAVBAR */
+
+    .about-me {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .firstText{
+        font-size: 60px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .school{
+        font-size: 40px;
+    }
+    .stuff{
+        font-size: 40px;
+    }
+    .video{
+        font-size: 40px;
+    }
+    .Photo{
+        font-size: 40px;
+    }
+
+    .projects {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .twoImages {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .myday IMG {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        justify-content: normal;
+    }
+
+    .graph {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagesPhoto1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagesPhoto2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagesPhoto3 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerLeft div {
+        justify-content: center;
+    }
+
+    .footerRight {
+        margin-top: 40px;
+    }
+
+    /* END OF FOOTER */
+
+}
+
+@media screen and (max-width: 900px) {
+    .title{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 700px) {
+    body,
+    body > * {
+        margin: 45px 20px 0px;
+    }
+
+    /* NAVBAR */
+    .nav-categories {
+        gap: 20px;
+    }
+
+    /* END OF NAVBAR */
+    .title{
+        font-size: 20px;
+    }
+
+    /* FOOTER */
+    .footerRight {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* END OF FOOTER */
+}
+
+@media screen and (max-width: 425px) {
+
+    /* NAVBAR */
+    #navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    /* END OF NAVBAR */
+
+    .firstText{
+        font-size: 30px;
+    }
+    .title{
+        font-size: 12px;
+    }
+    .school{
+        font-size: 30px;
+    }
+    .stuff{
+        font-size: 30px;
+    }
+    .video{
+        font-size: 30px;
+    }
+    .Photo{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    .Columbia p{
+        font-size: 10px;
+    }
+    .Simon p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .about-me {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .about-me IMG {
+        width: 200px;
+        height: 200px;
+    }
+
+    
+
+    .projects {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .twoImages {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .twoImages IMG {
+        width: 200px;
+        height: 200px;
+    }
+
+    .myday IMG {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        justify-content: normal;
+    }
+
+    .graph {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .graph IMG{
+        width: 200px;
+        height: 200px;
+    }
+
+    .imagesPhoto1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagesPhoto1 IMG {
+        width: 200px;
+        height: 200px;
+    }
+
+    .imagesPhoto2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .imagesPhoto2 IMG {
+        width: 200px;
+        height: 200px;
+    }
+
+    .imagesPhoto3 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagesPhoto3 IMG {
+      width: 200px;
+      height: 200px;
+    }
 }
