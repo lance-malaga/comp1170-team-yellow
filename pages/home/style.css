@@ -3,12 +3,11 @@ html {
 }
 body{
     background-color: #1f1f1f;
-    max-width: 1680px;
     margin: 45px 0 100px;
     font-family: 'Roboto', sans-serif;
 }
-
-body>* {
+body > * {
+    max-width: 1680px;
     margin: 0 80px;
 }
 
@@ -21,45 +20,38 @@ body>* {
     align-items: center;
     padding-bottom: 11px;
 }
-
 .logo-main span {
     margin-right: 5px;
 }
-
 .logo-main a {
     color: #FFFFFF;
     font-size: 20px;
     text-decoration: none;
     font-family: 'Baloo 2', cursive;
 }
-
 .nav-categories {
     display: flex;
     gap: 150px;
 }
-
 .nav-categories a {
     text-decoration: none;
     color: #FFFFFF;
 }
-
 #red {
     color: #F44D00;
 }
-
 .navbar-line {
     height: 1px;
     background-color: white;
 }
-
 /* END OF NAVBAR */
 
 /* TOP SECTION */
 .topSection {
-    margin: 100px auto 80px;
+    margin-top: 100px;
+    margin-bottom: 80px;
     width: fit-content;
 }
-
 .topSection h1 {
     color: #FFFFFF;
     font-family: 'Baloo 2', cursive;
@@ -68,153 +60,81 @@ body>* {
     line-height: 80px;
     margin: 0;
 }
-
 .topSection span {
     color: #F44D00;
 }
-
 .secondLine,
 .thirdLine div,
 .topDesc {
     display: flex;
 }
-
 .circleGroup {
     position: relative;
     right: 20px;
 }
-
 .thirdLine img {
     margin: 0 30px;
 }
-
 .topDesc {
     justify-content: space-between;
 }
-
 .topDesc p {
     font-weight: 300;
     font-size: 40px;
     color: #FFFFFF;
     width: 45%;
 }
-
 .topOrangeSection {
     background-color: #F44D00;
     padding: 100px 0;
     margin: 120px 0 0;
+    max-width: none;
 }
-
 .topOrangeSection div {
+    max-width: 1680px;
     margin: 0 80px;
     display: flex;
     justify-content: center;
     gap: 200px;
 }
-
-.topOrangeSection img {
-    /* height: 200px; */
-}
-
 /* END OF TOP SECTION */
 
 /* RECENT WORKS */
-.WholeBody{
-    display: flex;
-    max-width: 1680px;
-    flex-direction: column;
-    height: 1300px;
-    background-color: white;
+.recentWorkContainer {
+    padding: 120px 0;
     margin: 0;
+    max-width: none;
+    background-color: white;
 }
-.recent-works {
-    display: flex;
-    justify-content: space-between;
-    gap: 160px;
-    margin: 100px;
-    margin-bottom: 0;
+.recentWorkContainer > div {
+    max-width: 1680px;
+    margin: 0 80px;
 }
-
-
-.description {
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    width: 710px;
+.recentWorkContainer h1 {
+    font-weight: 300;
+    font-size: 50px;
+    text-align: right;
 }
-
-.texts {
-    display: flex;
-    flex-direction: column;
+.recentWorkContainer span {
+    color: #F44D00;
+    font-weight: 700;
 }
-
-.firstText {
-    display: flex;
-    font-size: 30px;
-    justify-content: end;
-    margin-bottom: -80px;
-}
-
-.secondText {
-    display: flex;
-    font-size: 30px;
-    justify-content: end;
-    color: #ff8c00;
-}
-
-.imagetwos {
-    display: flex;
-    flex-direction: row;
-    gap: 65px;
-}
-
-.righttexts {
-    display: flex;
-    flex-direction: column;
-    width: 720px;
-}
-
-.threeimage {
-    display: flex;
-    justify-content: center;
-}
-
-.circles {
-    display: flex;
-    gap: 65px;
-    justify-content: center;
-}
-
-.lastdescription {
-    display: flex;
-    justify-content: space-between;
-    gap: 160px;
-    margin: 100px;
-    margin-top: 50px;
-}
-
-.fourimages {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.first{
+.recentTop {
     display: flex;
     align-items: center;
-    justify-content: center; 
 }
-
-.BookCovers{
+.recentBottom {
     display: flex;
-    flex-direction: row;
-    gap: 65px;
+    align-items: center;
+    margin-top: 70px;
 }
-
-.lastTwo {
+.recentTop > img,
+.recentBottom > img {
+    margin: 0 auto;
+}
+.bookCovers {
     display: flex;
-    flex-direction: row;
+    gap: 30px;
 }
 /* END OF RECENT WORKS */
 
@@ -236,14 +156,18 @@ body>* {
 }
 .aboveImages {
     display: flex;
-    gap: 65px;
+    gap: 45px;
     margin-top: 50px;
     margin-bottom: 70px;
 }
 .bellowImages {
     display: flex;
-    justify-content: space-between;
+    gap: 45px;
     align-items: center;
+    justify-content: flex-end;
+}
+.bellowImages > img {
+    margin: 0 auto;
 }
 /* END OF TEAM SECTION */
 
@@ -261,7 +185,7 @@ body>* {
     margin: 0 0 20px;
 }
 .footerLeft span {
-    color:#f44d00;
+    color:#F44D00;
 }
 .footerLeft div {
     display: flex;
@@ -292,9 +216,11 @@ body>* {
 
 /* RESPONSIVENESS */
 /* BIGGER SCREENS */
-@media screen and (min-width: 1760px){
-    body {
-        margin: 45px auto 180px;
+@media screen and (min-width: 1800px){
+    body > *,
+    .topOrangeSection > div,
+    .recentWorkContainer > div {
+        margin: 0 auto;
     }
 }
 
