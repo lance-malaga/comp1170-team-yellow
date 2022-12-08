@@ -48,8 +48,7 @@ body > * {
 
 /* TOP SECTION */
 .topSection {
-    margin-top: 100px;
-    margin-bottom: 80px;
+    margin: 100px auto 80px;
     width: fit-content;
 }
 .topSection h1 {
@@ -67,6 +66,7 @@ body > * {
 .thirdLine div,
 .topDesc {
     display: flex;
+    align-items: center;
 }
 .circleGroup {
     position: relative;
@@ -77,6 +77,7 @@ body > * {
 }
 .topDesc {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .topDesc p {
     font-weight: 300;
@@ -147,11 +148,17 @@ body > * {
 .recentTop {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 }
 .recentBottom {
     display: flex;
     align-items: center;
     margin-top: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 }
 .recentTop > .pixelProfile,
 .recentBottom > .pixelProfile {
@@ -159,6 +166,8 @@ body > * {
 }
 .bookCovers {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 .briPixelGif {
@@ -217,10 +226,11 @@ body > * {
     position: absolute;
     left: 0;
     opacity: 0;
-    transition: .7s opacity;
+    transition: .7s transform;
 }
 .profileItem:hover {
     opacity: 1;
+    transform: scale(1.1);
 }
 .lanceItem {
     left: -29px;
@@ -287,13 +297,65 @@ body > * {
 }
 
 /* SMALLER SCREENS */
+@media screen and (max-width: 1200px){
+    /* TOP SECTION */
+    .topSection {
+        width: auto;
+        margin: 100px 30px 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .topSection h1 {
+        font-size: 60px;
+        line-height: 45px;
+    }
+    .topDesc {
+        justify-content: center;
+    }
+    .topDesc p {
+        text-align: center;
+        width: 100%;
+    }
+    .secondLine {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .thirdLine img {
+        width: 28%;
+    }
+    .circleGroup {
+        width: 22%;
+    }
+    /* TOP ORANGE */
+    .topOrangeSection div {
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* TEAM SECTION */
+    .subtitle h1 {
+        text-align: center;
+    }
+    .aboveImages,
+    .bellowImages {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bellowImages > img {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     /* NAVBAR */
     .nav-categories {
         gap: 50px;
     }
-    /* END OF NAVBAR */
-    
+    /* RECENT WORKS */
+    .recentWorkContainer h1 {
+        text-align: center;
+    }
     /* FOOTER */
     .footer {
         flex-direction: column;
@@ -307,25 +369,38 @@ body > * {
     .footerRight {
         margin-top: 40px;
     }
-    /* END OF FOOTER */
+}
+
+@media screen and (max-width: 800px){
+    body > *,
+    .topOrangeSection div,
+    .recentWorkContainer > div  {
+        margin: 0 30px;
+    }
+    /* TOP SECTION */
+    .topSection h1 {
+        text-align: center; 
+    }
 }
 
 @media screen and (max-width: 700px) {
-    body {
-        margin: 45px 20px 0px; 
-    }
     /* NAVBAR */
     .nav-categories {
         gap: 20px;
     }
-    /* END OF NAVBAR */
-    
+    /* TOP SECTION */
+    .circleGroup {
+        display: none;
+    }
+    /* RECENT WORKS */
+    .briPixel {
+        width: 100%;
+    }
     /* FOOTER */
     .footerRight {
         flex-direction: column;
         gap: 40px;
     }
-    /* END OF FOOTER */
 }
 
 @media screen and (max-width: 425px){
@@ -334,5 +409,15 @@ body > * {
         flex-direction: column;
         gap: 20px;
     }
-    /* END OF NAVBAR */
+    /* TOP SECTION */
+    .topSection h1 {
+        font-size: 40px;
+        line-height: 30px;
+    }
+    .thirdLine img {
+        width: 15%;
+    }
+    .topDesc img {
+        width: 90%;
+    }
 }
