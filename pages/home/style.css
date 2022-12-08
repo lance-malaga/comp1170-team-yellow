@@ -102,7 +102,7 @@ body>* {
 .topOrangeSection {
     background-color: #F44D00;
     padding: 100px 0;
-    margin: 120px 0;
+    margin: 120px 0 0;
 }
 
 .topOrangeSection div {
@@ -113,7 +113,7 @@ body>* {
 }
 
 .topOrangeSection img {
-    height: 200px;
+    /* height: 200px; */
 }
 
 /* END OF TOP SECTION */
@@ -220,7 +220,7 @@ body>* {
 
 /* TEAM SECTION */
 .teamSection {
-    font-family: 'Roboto', sans-serif;
+    margin-top: 120px;
 }
 .subtitle h1 {
     color: #FFFFFF;
