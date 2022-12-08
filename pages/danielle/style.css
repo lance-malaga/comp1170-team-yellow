@@ -7,7 +7,10 @@ body{
     margin: 45px 80px 0px;
     align-content: center;
 }
-
+body > * {
+    max-width: 1680px;
+    margin: 0 80px;
+}
 @media screen and (min-width: 1960px){
     body {
         margin: 45px auto 0px;
@@ -18,15 +21,48 @@ body{
     max-width: 60%;
     margin: 0 auto;
 }
-#navbar{
+/* navbar */
+#navbar {
     font-family: Helvetica, sans-serif;
     font-weight: 700;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 18px;
+    align-items: center;
+    padding-bottom: 11px;
 }
 
+.logo-main span {
+    margin-right: 5px;
+}
+
+.logo-main a {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+}
+
+.nav-categories {
+    display: flex;
+    gap: 150px;
+}
+
+.nav-categories a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#red {
+    color: #F44D00;
+}
+
+.navbar-line {
+    height: 1px;
+    background-color: white;
+}
+
+/*end */
 .team-name{
     padding-right: 5px;
     font-size: 20px;
@@ -257,119 +293,76 @@ h1{
     flex-direction: row;
     gap: 430px;
 }
-/* .container-box5{
+
+.container-box5{
     display: flex;
-    flex-direction: column;
-    position: relative;
-} */
-.donut, .dungeon, .room{
+    flex-direction: row;
     width: 498px;
     border-radius: 25px;
-    position: absolute;
-} 
-
-
- /* .donut, .dungeon{
-    animation-name: slideFadeInOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}  */
-  @keyframes slideFadeInOut{
-    0%{
-        opacity: 100%;
-    }
-    17%{
-        opacity: 100%;
-    }
-    25%{
-        opacity: 0%;
-    }
-    92%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 0%;
-    }
 }
-
-
-.donut{
-    animation-name: first;
-    animation: first 6s;
-    animation-delay: 6s;   
-}
-
-@keyframes second{
-    0%{
-        opacity: 0%;
-    }
-    17%{
-        opacity: 100%;
-    }
-    25%{
-        opacity: 50%;
-    }
-    92%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 0%;
-    }
-}
-
-.dungeon {
-    animation-name: second;
-    animation: second 5s ;
-    animation-delay: 4s;
-}    
-
-@keyframes third {
-    0%{
-        opacity: 0;
-    }
-    17%{
-        opacity: 0%;
-    }
-    25%{
-        opacity: 0%;
-    }
-    92%{
-        opacity: 100%;
-    }
-    100%{
-        opacity: 50%;
-    }
-}
-.room{
-    animation-name: third;
-    animation: third 5s;
-    animation-delay: 2s; 
-    height: 280px;
-} 
-
-
-.anim-loop{
-    width: 498px;
-    height: 280px;
+.Blender{
+    max-width: 498px;
+    height: 264px;
     border-radius: 25px;
-    animation: infinite;
-    position: absolute;
 }
 
-.blender-anim{
-    display:flex;
-    flex-direction: column;
-  
+.images{
+    animation-name: image1;
+    animation: duration 4s;
+}
+@keyframes image1{
+    0%{
+        opacity: 100%;
+    }
+
+    50%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
 }
 
-.gallery-container{
-    position: relative;
-    margin-top: 335px;
-    grid-template-rows:  repeat(4);
-    grid-template-columns: repeat(3);
+
+/* FOOTER */
+.footerline {
+    margin-top: 170px;
+    margin-bottom: 35px;
 }
-.illustration{
-    padding: 10px;
+.footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
+.footerLeft p {
+    margin: 0 0 20px;
+}
+.footerLeft span {
+    color:#f44d00;
+}
+.footerLeft div {
+    display: flex;
+    gap: 20px;
+}
+.footerLeft img {
+    height: 20px;
+}
+.footerRight {
+    display: flex;
+    gap: 60px;
+}
+.footerRight h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    width: auto;
+    border: none;
+}
+.footerRight p {
+    margin: 0;
+    line-height: 22px;
+}
+.footerRight .email{
+    color: #F44D00;
+}
+/* END OF FOOTER */
