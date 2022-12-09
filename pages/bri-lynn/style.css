@@ -1,48 +1,52 @@
 body{
     background-color: #1F1F1F;
     max-width: 1680px;
-    margin: 45px 80px 0px;
-    
+    margin: 45px 80px 100px;
+    font-family: 'Roboto', sans-serif;
 }
-@media screen and (min-width: 1550px) {
-    .body{
-        margin: 45px auto 0px;
-    }
-}
-#navbar{
-    font-family: Helvetica, sans-serif;
+
+/* NAVBAR */
+#navbar {
     font-weight: 700;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 18px;
-}
-
-.team-name{
-    padding-right: 5px;
-    font-size: 20px;
-}
-
-.smellow{
-    display: flex;
     align-items: center;
+    padding-bottom: 11px;
 }
-a{
-    color: white;
+.logo-main span {
+    margin-right: 5px;
+}
+.logo-main a {
+    color: #FFFFFF;
+    font-size: 20px;
     text-decoration: none;
+    font-family: 'Baloo 2', cursive;
 }
-.red{
-    color: #F44D00;
-}
-.nav-categories{
+.nav-categories {
     display: flex;
     gap: 150px;
 }
-
-.navbar-line{
+.nav-categories a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: .7s color;
+}
+.nav-categories a:hover {
+    color: #F44D00;
+}
+#red {
+    color: #F44D00;
+    transition: .7s color;
+}
+#red:hover {
+    color: #FFFFFF;
+}
+.navbar-line {
     height: 1px;
     background-color: white;
 }
+/* END OF NAVBAR */
 
 @media screen and (max-width: 1023px){
     .nav-categories{
@@ -92,14 +96,14 @@ a{
 
 .title-text{
     color: white;
-    font-family: baloo 2;
+    font-family: 'Baloo 2', cursive;
     margin-left: 50px;
     font-size: 55px;
     position: absolute;
 }
 .title-text2{
     color: white;
-    font-family: baloo 2;
+    font-family: 'Baloo 2', cursive;
     margin-left: 100px;
     margin-top: 150px;
     font-size: 55px;
@@ -117,7 +121,6 @@ a{
     position: absolute;
     left: 150px;
     margin-top: 400px;
-    font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -125,7 +128,7 @@ a{
 }
 .picture-headings{
     color: white;
-    font-family: baloo2;
+    font-family: 'Baloo 2', cursive;
     margin-left: 5%;
     position: relative;
     font-size: 24px;
@@ -151,6 +154,7 @@ a{
     height: 250px;
     margin-left: 10%;
     margin-top: 5%;
+    border: 5px solid #F44D00;
     
     
     
@@ -162,6 +166,7 @@ a{
     height: 250px;
     margin-left: 35%;
     margin-top: 5%;
+    border: 5px solid #F44D00;
     
 }
 .grandma{
@@ -169,6 +174,7 @@ a{
     width: 270px;
     height: 250px;
     margin-left: 40%;
+    border: 5px solid #F44D00;
     
     
     
@@ -176,7 +182,7 @@ a{
 
 
 .design{
-    font-family: baloo2;
+    font-family: 'Baloo 2', cursive;
     font-size: 24px;
     color: rgb(255, 255, 255);
     margin-left: 5%;
@@ -195,6 +201,7 @@ a{
     padding-top: 5%;
     
     
+    
 }
 
 .work1{
@@ -202,17 +209,20 @@ a{
     height: 502px;
     
     
+    
 }
 .work2{
     width: 356px;
     height: 502px;
     padding-left: 35%;
+   
     
 }
 .work3{
     width: 356px;
     height: 502px;
     padding-top: 10%;
+  
 }
 .work4{
     width: 356px;
@@ -249,7 +259,7 @@ a{
     
 }
 .hobbies{
-    font-family: baloo2;
+    font-family: 'Baloo 2', cursive;
     font-size: 24px;
     color: rgb(255, 255, 255);
     margin-left: 5%;
@@ -302,3 +312,71 @@ a{
 }
 /* END OF FOOTER */
 
+
+/* RESPONSIVENESS */
+/* BIGGER SCREENS */
+@media screen and (min-width: 1800px){
+    body {
+        margin: 45px auto 100px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+  .container{
+    margin: 45px auto 0px;
+  }
+  .me{
+    margin: 45px auto 0px;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+    .body{
+        margin: 45px auto 0px;
+    }
+}
+@media screen and (min-width: 1800px){
+   .designwork{
+    margin: 0 auto;
+   }
+}
+@media screen and (min-width: 1800px){
+.about-me{
+    margin: 0 auto;
+}
+}
+/* SMALLER SCREENS */
+@media screen and (max-width: 1200px){
+     /* FOOTER */
+     .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footerLeft div {
+        justify-content: center;
+    }
+    .footerRight {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 425px){
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .me{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 700px){
+    /* NAVBAR */
+    .nav-categories {
+        gap: 20px;
+    }
+}
