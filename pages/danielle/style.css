@@ -567,7 +567,19 @@ a:hover{
     .childg{
         width: 390px;
     }
-
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footerLeft div {
+        justify-content: center;
+    }
+    .footerRight {
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width:695px){
@@ -585,9 +597,6 @@ a:hover{
     }
     .introduction{
         position: relative;
-    }
-    .intro-right{
-
     }
     .daniella-image{
         position: relative;
@@ -620,6 +629,11 @@ a:hover{
 @media screen and (max-width:698px){
     #navbar{
         margin: 0px 45px 0px -75px;
+    }
+    /* FOOTER */
+    .footerRight {
+        flex-direction: column;
+        gap: 40px;
     }
 }
 @media screen and (max-width:505px){
@@ -700,9 +714,6 @@ a:hover{
     .navbar-line{
         width: 165%;
         margin: 0px 25px 0px 25px;
-    }
-    .nav-categories{
-        
     }
     .footer{
         display: flex;
