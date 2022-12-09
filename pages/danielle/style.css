@@ -6,7 +6,7 @@ body{
     max-width: 1680px;
     margin: 45px 80px 0px;
     align-content: center;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px 80px 0px 80px;
 }
@@ -22,7 +22,7 @@ body{
 
 
 #navbar {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 14px;
     display: flex;
@@ -51,10 +51,20 @@ body{
 .nav-categories a {
     text-decoration: none;
     color: #FFFFFF;
+    transition: .7s color;
+}
+
+.nav-categories a:hover {
+    color: #F44D00;
 }
 
 #red {
     color: #F44D00;
+    transition: .7s color;
+}
+
+#red:hover {
+    color: #FFFFFF;
 }
 
 .navbar-line {
@@ -136,12 +146,12 @@ h1{
     justify-content: space-between;
     width: 132px;
     color: #C6EC4C;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .description{
     color: white;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     display: flex;
 }
@@ -155,7 +165,7 @@ h1{
 }
 
 .container-box1{
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 25px;
     margin-top: 25px;
     display: flex;
@@ -182,7 +192,7 @@ a:hover{
 }
 
 .container-box2{
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     border: #1F1F1F 2px solid;
     width: 420px;
     background-color: white;
@@ -204,7 +214,7 @@ a:hover{
 }
 
 .container-box3{
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: white;
     display: flex;
@@ -238,7 +248,7 @@ a:hover{
 }
 
 .software{
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 16px;
 }
@@ -249,7 +259,7 @@ a:hover{
 
 .titles-purple { 
     border-bottom:  8px solid #BAA8E1;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: white;
@@ -258,7 +268,7 @@ a:hover{
 }
 .titles-purple2{
     border-bottom:  8px solid #BAA8E1;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: white;
@@ -275,7 +285,7 @@ a:hover{
 }
 .hobbies{
     display: flex;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: 700;
     gap: 85px;
@@ -298,7 +308,7 @@ a:hover{
 
 .titles-orange{
     border-bottom:  8px solid #F44D00;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: white;
@@ -380,7 +390,7 @@ a:hover{
     color: white;
     display: flex;
     justify-content: space-between;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 100px;
     margin: 0 auto;
 }
@@ -402,7 +412,10 @@ a:hover{
     gap: 60px;
 }
 .footerRight h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 24px;
+    line-height: normal;
     margin: 0 0 10px;
     width: auto;
     border: none;
