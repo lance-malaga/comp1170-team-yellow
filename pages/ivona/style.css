@@ -46,46 +46,262 @@ body > * {
 /* END OF NAVBAR */
 
 .Profile-Box{
-    border: 4px solid rgb(242, 205, 92);
+    background-color: rgb(242, 205, 92);
     margin-top: 30px;
     display: flex;
     margin: 50px, 40px;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
   
     
 }
 
 
 .img-profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 230px;
+    height: 250px;
+    margin-left: 80px;
 
     
 }
 
 .Profile-Info{
-    color: aliceblue;
+    color: black;
     align-items: left;
     width: 460px;
     height: 287;
     object-position: top left;
-    margin-left: 300px;
-    margin-bottom: 100px;
+    margin-left: 150px;
+    
 }
 .Sub-Title{
-    color: #F44D00;
+    color:black;
 }
 .Education-Info{
    color: black;
    height: 25px;
    width: 465px;
-   background-color: #D9D9D9;
+   background-color: rgb(186, 168, 225);
+   margin-bottom: 50px;
+   border-radius: 5px;
    
    
 }
+.LikesDislikes{
+    background-color: rgb(242, 205, 92) ;
+    height: 300px;
+    margin-top: 85px;
+    border-radius: 15px;
+
+   
+}
+.LikesDislikes h1{
+   margin-left: 450px;
+   margin-top: 20px;
+   
+}
+.Dancing{
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.Volleyball{
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+.Painting{
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 300px
+}
+
 .Portfolio-Designs{
-    border:  4px solid rgb(242, 205, 92);
-    height: 1250px;
-    margin-top: 200px;
+    margin-top: 50px;
+}
+.Portfolio-Designs h2{
+    color: #FFFFFF;
+    margin-left: 10px;
+    border-bottom: 3px solid #f44d00;
+    border-width: 5px;
+    width: 170px;
+}
+
+.Nature{
+    width: 540px;
+
+
+    
+    
+
+}
+.imageContainer{
+    display: flex;
+    gap: 30px;
+}
+.NightSky{
+    height: 330px;
+    width: 540px;
+
+    
+    
+}
+.Snow{
+    display: flex;
+    height: 330px;
+    width: 540px;
+    
+    
+}
+.smallImageContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.imageContainer2{
+    display: flex;
+    gap: 30px;
+}
+.Winter{
+    height: 330px;
+    width: 540px;
+    padding-top: 80px;
+}
+.Carosel{
+    height: 330px;
+    width: 540px;
+}
+.Cover{
+    width: 540px; 
+    padding-top: 80px;
+}
+.smallImageContainer2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+/* FOOTER */
+.footerline {
+    margin-top: 170px;
+    margin-bottom: 35px;
+}
+.footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.footerLeft p {
+    margin: 0 0 20px;
+}
+.footerLeft span {
+    color:#f44d00;
+}
+.footerLeft div {
+    display: flex;
+    gap: 20px;
+}
+.footerLeft img {
+    height: 20px;
+}
+.footerRight {
+    display: flex;
+    gap: 60px;
+}
+.footerRight h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    width: auto;
+    border: none;
+}
+.footerRight p {
+    margin: 0;
+    line-height: 22px;
+}
+.footerRight .email{
+    color: #F44D00;
+}
+/* END OF FOOTER */
+/* RESPONSIVENESS */
+/* BIGGER SCREENS */
+@media screen and (min-width: 1760px){
+    body {
+        margin: 45px auto 180px;
+    }
+}
+
+/* SMALLER SCREENS */
+@media screen and (max-width: 1023px) {
+    /* NAVBAR */
+    .nav-categories {
+        gap: 50px;
+    }
+    /* END OF NAVBAR */
+    
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footerLeft div {
+        justify-content: center;
+    }
+    .footerRight {
+        margin-top: 40px;
+    }
+    /* END OF FOOTER */
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 45px 20px 0px; 
+    }
+    /* NAVBAR */
+    .nav-categories {
+        gap: 20px;
+    }
+    /* END OF NAVBAR */
+    
+    /* FOOTER */
+    .footerRight {
+        flex-direction: column;
+        gap: 40px;
+    }
+    /* END OF FOOTER */
+}
+
+@media screen and (max-width: 425px){
+    /* NAVBAR */
+    #navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* END OF NAVBAR */
+
+/* SMALLER SCREENS */
+@media screen and (max-width: 1200px){
+    .headerName {
+        width: min-content;
+        margin: 0 auto;
+    }
+    .Profile-Box{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+    .Profile-Box {
+        width: 100%;
+        display:  flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .Profile-Info {
+        width: 50%;
+    }
+}
 }
