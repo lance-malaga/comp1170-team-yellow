@@ -1,11 +1,8 @@
 body {
     max-width: 1680px;
-    margin: 45px 0 180px;
+    margin: 45px 80px 180px;
     background: rgb(31, 31, 31);
     
-}
-body > * {
-    margin: 0 80px;
 }
 
 /* NAVBAR */
@@ -81,7 +78,7 @@ body > * {
 .Education-Info{
    color: black;
    height: 25px;
-   width: 465px;
+   /* width: 465px; */
    background-color: rgb(186, 168, 225);
    margin-bottom: 50px;
    border-radius: 5px;
@@ -90,34 +87,32 @@ body > * {
 }
 .LikesDislikes{
     background-color: rgb(242, 205, 92) ;
-    height: 300px;
     margin-top: 85px;
     border-radius: 15px;
-
+    padding-bottom: 50px;
    
 }
+.LikesDislikes div {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+}
 .LikesDislikes h1{
-   margin-left: 450px;
-   margin-top: 20px;
-   
+    text-align: center;
+    padding-top: 20px;
 }
 .Dancing{
     height: 150px;
     width: 150px;
-    margin-top: 50px;
-    margin-left: 50px;
 }
 .Volleyball{
     height: 150px;
     width: 150px;
-    margin-top: 50px;
-    margin-left: 250px;
 }
 .Painting{
     height: 150px;
     width: 150px;
-    margin-top: 50px;
-    margin-left: 300px
 }
 
 .Portfolio-Designs{
@@ -141,6 +136,8 @@ body > * {
 }
 .imageContainer{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .NightSky{
@@ -164,6 +161,8 @@ body > * {
 }
 .imageContainer2{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .Winter{
@@ -266,6 +265,11 @@ body > * {
         gap: 20px;
     }
     /* END OF NAVBAR */
+
+    .imageContainer img,
+    .imageContainer2 img {
+        max-width: 100%;
+    }
     
     /* FOOTER */
     .footerRight {
@@ -282,15 +286,12 @@ body > * {
         gap: 20px;
     }
     /* END OF NAVBAR */
+}
 
 /* SMALLER SCREENS */
 @media screen and (max-width: 1200px){
-    .headerName {
-        width: min-content;
-        margin: 0 auto;
-    }
     .Profile-Box{
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         gap: 50px;
     }
@@ -303,5 +304,4 @@ body > * {
     .Profile-Info {
         width: 50%;
     }
-}
 }
